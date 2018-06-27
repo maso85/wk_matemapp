@@ -1,0 +1,90 @@
+<resources>
+
+    <!-- nomi activity - nome intestazione layout -->
+    <string name="app_name">Convocazioni</string>
+    <string name="label_pagina_menu_principale">Convocazioni - Home Page</string>
+    <string name="label_pagina_crea_squadra">Convocazioni - Create Team</string>
+    <string name="label_pagina_modifica_squadra">Convocazioni - Edit Team</string>
+    <string name="label_pagina_elimina_squadra">Convocazioni - Delete Team</string>
+    <string name="label_pagina_crea_convocazione">Convocazioni - Create Convocation</string>
+    <string name="label_pagina_smimstatore_multisquadra">Convocazioni - Select Team</string>
+    <string name="label_pagina_visualizza_convocazione">Convocazioni - View Convocation</string> 
+
+    <!-- menu da tasto -->
+    <string name="versione_app">App Version</string>
+    <string name="action_share">Share with</string>    
+    
+    <!-- menu principale -->
+    <string name="bottone_crea_squadra">Create Team</string>
+    <string name="bottone_modifica_squadra">Edit Team</string>
+    <string name="bottone_elimina_squadra">Delete Team</string>
+    <string name="bottone_crea_convocazione">Create Convocation</string>
+    <string name="bottone_visualizza_convocazioni">View Convocations</string>
+    
+    
+    <!-- crea utenza -->
+    <string name="hint_text_username_admin">Username Admin</string>
+	<string name="hint_text_password_admin">Password Admin</string>
+	<string name="hint_text_conferma_password_admin">Conferma Password Admin</string>	
+	<string name="hint_text_username_user">Username Genitore </string>
+	<string name="hint_text_password_user">Password Genitore</string>
+	<string name="hint_text_conferma_password_user">Conferma Password Genitore</string>	
+	<string name="text_spiegazione_creazione_squadra">
+	Creare due tipo di utenze: ADMIN per modificare la convocazioni, GENITORE per la sola lettura
+	</string>	
+	<string name="conferma_crea_utenza">Confirm</string>
+	
+	
+	<!-- crea squadra -->
+    <string name="text_crea_rosa">Create your team</string>
+    <string name="bottone_aggiungi_giocatore">Add</string>
+	<string name="hint_text_inserisci_giocatore">Add a player</string>
+	<string name="bottone_salva">Save</string>
+ 	<string name="bottone_visualizza">Show</string>
+ 	<string name="bottone_elimina_giocatore">Delete</string>
+ 	<string name="text_indicazione_nome_squadra">
+ 	Choose a name of your team.
+ 	</string>
+ 	<string name="hint_text_nome_squadra">Insert the name of your team</string>
+ 	<string name="text_indicazione_nome_giocatore">
+ 	Insert a player and push Add button.    
+ 	</string>
+ 	
+ 	<!-- visualizza squadra -->
+ 	<string name="testo_checkbox_Giocatore_visualizzato">Convocated</string>
+ 	
+ 	
+ 	<!-- crea convocazione -->
+ 	<string name="bottone_salva_convocazione">Save</string>
+	<string name="bottone_elenco_convocati">Team List</string>
+	<string name="bottone_informazioni_partita">Informations</string>
+	<string name="text_partita">Match</string>
+ 	<string name="hint_text_partita">Insert match</string>
+	<string name="text_valevole_per">Valid for</string>
+ 	<string name="hint_text_valevole_per">Insert competition</string>
+	<string name="text_data_partita">Day of the match</string>
+ 	<string name="hint_text_data_partita">Insert day</string>
+	<string name="text_orario_partita">Time of the match</string>
+ 	<string name="hint_text_orario_partita">Time</string>
+	<string name="text_luogo_partita">Place of the match</string>
+ 	<string name="hint_text_luogo_partita">Insert place</string>
+	<string name="text_orario_convocazione">Time of convocation</string>
+ 	<string name="hint_text_orario_convocazione">Time:</string>		
+	<string name="text_luogo_convocazione">Place of convocation</string>
+ 	<string name="hint_text_luogo_convocazione">Insert place of convocation</string>
+ 	<string name="text_note">Note</string>
+ 	<string name="hint_text_note">Insert any note</string>
+ 	
+ 	<!-- stringhe usate lato java -->
+ 	<string name="squadra_creata_con_successo">Team created successfully</string>
+ 	<string name="inserisci_almeno_un_giocatore">Please insert at least one player</string>
+ 	<string name="scegli_orario_convocazione">Choose time of convocation</string>
+ 	<string name="scegli_orario_partita">Choose time of the match</string>	
+ 	<string name="convocazione_creata_con_successo">Convocation created successfully</string>
+ 	<string name="conferma_eliminazione_squadra">Confirm delete team?</string>
+ 	<string name="elimina">Delete</string>
+ 	<string name="squadra_eliminata_con_successo">Team deleted successfully</string>
+	<string name="annulla">Cancel</string>
+	<string name="giocatoriInRosa">Team Players: </string>
+	<string name="squadre">Teams</string>
+</resources>

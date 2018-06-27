@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center_horizontal"
+     android:background="#FFFFFF" >
+
+    <TableRow
+         android:id="@+id/idRigaUnoMenuPrincipale"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="5dp" >
+
+         <Button
+             android:id="@+id/idBottoneCreaSquadra"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/bottone_crea_squadra" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/idRigaDueMenuPrincipale"
+     	android:layout_width="wrap_content"
+		android:padding="5dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+             android:id="@+id/idBottoneModificaSquadra"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/bottone_modifica_squadra" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/idRigaTreMenuPrincipale"
+        android:layout_width="wrap_content"
+		android:padding="5dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/idBottoneEliminaSquadra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottone_elimina_squadra" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/idRigaQuattroMenuPrincipale"
+        android:layout_width="wrap_content"
+		android:padding="5dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/idBottoneCreaConvocazione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottone_crea_convocazione" />
+
+    </TableRow>
+    
+    <TableRow
+        android:id="@+id/idRigaEsciMenuPrincipale"
+        android:layout_width="wrap_content"
+		android:padding="5dp"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/idBottoneEsci"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bottone_visualizza_convocazioni" />
+
+    </TableRow>
+
+ </TableLayout>
+

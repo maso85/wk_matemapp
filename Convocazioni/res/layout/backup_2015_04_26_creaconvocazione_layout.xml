@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:id="@+id/idLayoutPaginaConvocazioni"
+	android:background="#ffffff"
+	android:layout_height="wrap_content"
+	android:gravity="center_horizontal" >
+	
+	<Button
+	    android:id="@+id/idBottoneSalvaConvocazione"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:text="@string/bottone_salva_convocazione" />
+
+	<Button
+	    android:id="@+id/idBottoneElencoConvocati"
+	    android:layout_width="wrap_content"
+	    android:textSize="12sp"  
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/idBottoneSalvaConvocazione"
+	    android:text="@string/bottone_elenco_convocati" />
+	
+	<Button
+	    android:id="@+id/idBottoneInformazioniPartita"
+	    android:layout_width="match_parent"
+	    android:textSize="12sp"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/idBottoneSalvaConvocazione"
+	    android:layout_toRightOf="@+id/idBottoneElencoConvocati"
+	    android:text="@string/bottone_informazioni_partita" />
+		
+	
+	
+	<ScrollView
+	    android:layout_width="fill_parent"
+		android:layout_below="@id/idBottoneElencoConvocati"
+   		android:id="@+id/idScrollLayout"
+   		android:layout_height="wrap_content" >
+	
+	
+	<!-- layout contenitore scroll -->
+	<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        
+	    <TextView
+		    android:id="@+id/idTextInformazioniPartita"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:paddingLeft="5sp"
+			android:text="Informazioni della partita" />
+	
+	    
+		<!-- partita -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutPartita"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_partita"
+		        android:paddingLeft="5dp"
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextPartita"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_partita"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>	
+		
+	    <!-- valevole per -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutValevolePer"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_valevole_per"
+		        android:paddingLeft="5dp"
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextValevolePer"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_valevole_per"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+	    
+	    <!-- data partita -->		
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutDataPartita"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_data_partita"
+		        android:paddingLeft="5dp"
+		        android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextDataPartita"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_data_partita"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+	    
+	    <!-- orario partita -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutOrarioPartita"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_orario_partita"
+		        android:paddingLeft="5dp"            
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextOrarioPartita"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_orario_partita"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+	
+	    <!-- luogo partita -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutLuogoPartita"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_luogo_partita"
+		        android:paddingLeft="5dp"            
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextLuogoPartita"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_luogo_partita"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+	    
+	    <!-- orario ritrovo -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutOrarioConvocazione"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_orario_convocazione"
+		        android:paddingLeft="5dp"            
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextOrarioConvocazione"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_orario_convocazione"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+		
+	    <!-- luogo ritrovo -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutLuogoConvocazione"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_luogo_convocazione"
+		        android:paddingLeft="5dp"            
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextLuogoConvocazione"
+	            android:textSize="12sp"
+	            android:hint="@string/hint_text_luogo_convocazione"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>
+	
+	    <!-- note -->
+	    <LinearLayout
+	        android:layout_width="match_parent"
+			android:id="@+id/idLayoutNote"
+	        android:layout_height="wrap_content"
+	        android:orientation="horizontal"
+	        android:paddingTop="5sp">
+	        <TextView
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/text_note"
+		        android:paddingLeft="5dp"            
+	            android:textSize="12sp"
+	            android:textStyle="bold" />
+	        <EditText
+	            android:id="@+id/idEditTextNote"
+	            android:hint="@string/hint_text_note"
+	            android:textSize="12sp"
+	            android:inputType="textMultiLine"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content" />
+	    </LinearLayout>    
+	
+    </LinearLayout>
+    
+	</ScrollView>
+
+	<RelativeLayout 
+		android:layout_width="match_parent"
+		android:id="@+id/idLayoutElencoConvocati"
+		android:layout_below="@id/idBottoneInformazioniPartita"	    
+   		android:visibility="invisible"
+        android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:paddingTop="5sp">
+	
+    <TextView
+	    android:id="@+id/idTextElencoConvocati"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+		android:paddingLeft="5sp"
+		android:text="Elenco Convocati" />
+
+	
+	<GridView 
+		android:id="@+id/idGrigliaElencoConvocati" 
+		android:layout_width="fill_parent"
+		android:layout_below="@id/idTextElencoConvocati"	    
+		android:layout_height="fill_parent" 
+		android:numColumns="3"
+		android:gravity="center" />
+
+	</RelativeLayout>
+	
+</RelativeLayout>
+    
+

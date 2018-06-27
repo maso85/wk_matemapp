@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/text_crea_rosa" />
+
+    <Button
+        android:id="@+id/idBottoneSalva"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/bottone_salva" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/idRelativeLayout"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/idBottoneAggiungiGiocatore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/bottone_aggiungi_giocatore"/>
+        <EditText
+            android:id="@+id/idEditTextInserisciGiocatore"
+            android:layout_width="match_parent"
+	        android:hint="@string/hint_text_inserisci_giocatore"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/idBottoneAggiungiGiocatore"/>
+    </RelativeLayout>
+    
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+         >
+     
+	    <LinearLayout 
+	        android:id="@+id/idContenitoreElencoGiocatori"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical">
+	        <Button
+	        android:id="@+id/idBottoneVisualizza"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/bottone_visualizza" />
+	    </LinearLayout>
+	    
+	    
+    </ScrollView>
+    
+
+        
+
+</LinearLayout>
