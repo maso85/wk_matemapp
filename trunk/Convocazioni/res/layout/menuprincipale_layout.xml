@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+         <Button
+             android:id="@+id/idBottoneCreaSquadra"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@drawable/background_button_menu_principale"
+             style="@style/style_testoBottoni_menuPrincipale"
+             android:text="@string/bottone_crea_squadra" />
+
+        <Button
+            android:id="@+id/idBottoneModificaSquadra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_menu_principale"
+            style="@style/style_testoBottoni_menuPrincipale"
+            android:text="@string/bottone_modifica_squadra" />
+
+        <Button
+            android:id="@+id/idBottoneEliminaSquadra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_menu_principale"
+            style="@style/style_testoBottoni_menuPrincipale"
+            android:text="@string/bottone_elimina_squadra" />
+
+        <Button
+            android:id="@+id/idBottoneCreaConvocazione"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_menu_principale"
+            style="@style/style_testoBottoni_menuPrincipale"
+            android:text="@string/bottone_crea_convocazione" />
+
+        <Button
+            android:id="@+id/idBottoneVisualizzaConvocazioni"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_button_menu_principale"
+            style="@style/style_testoBottoni_menuPrincipale"
+            android:text="@string/bottone_visualizza_convocazioni" />
+
+</LinearLayout>
+

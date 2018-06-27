@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/idEditTextUsernameAdmin"
+        android:textColorHint="#990000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_username_admin"
+        android:textSize="12sp">
+        
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/idEditTextPasswordAdmin"
+        android:textColorHint="#990000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:hint="@string/hint_text_password_admin"
+        android:inputType="textPassword" >
+    </EditText>
+
+    <EditText
+        android:id="@+id/idEditTextConfermaPasswordAdmin"
+        android:textColorHint="#990000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="12sp"
+        android:hint="@string/hint_text_conferma_password_admin"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/idEditTextUsernameUser"
+        android:textColorHint="#000099"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_username_user"
+        android:textSize="12sp"
+	 />
+
+    <EditText
+        android:id="@+id/idEditTextPasswordUser"
+        android:textColorHint="#000099"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_password_user"
+        android:textSize="12sp"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/idEditTextConfermaPasswordUser"
+        android:textColorHint="#000099"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/hint_text_conferma_password_user"
+        android:textSize="12sp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/idTextSpiegazioneCreazioneSquadra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_spiegazione_creazione_squadra" />
+
+    <Button
+        android:id="@+id/idButtonConfermaCreaUtenza"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/conferma_crea_utenza" />
+
+</LinearLayout>
