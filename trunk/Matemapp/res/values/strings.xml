@@ -2,25 +2,21 @@
 
     <!-- nomi activity - nome intestazione layout -->
     <string name="app_name">Matemapp</string>
-    <string name="label_pagina_menu_principale">Convocazioni - Menu Principale</string>
-    <string name="label_pagina_crea_squadra">Convocazioni - Crea Squadra</string>
-    <string name="label_pagina_modifica_squadra">Convocazioni - Modifica Squadra</string>
-    <string name="label_pagina_elimina_squadra">Convocazioni - Elimina Squadra</string>
-    <string name="label_pagina_crea_convocazione">Convocazioni - Crea Convocazione</string>
-    <string name="label_pagina_smimstatore_multisquadra">Convocazioni - Seleziona Squadra</string>
-    <string name="label_pagina_visualizza_convocazione">Convocazioni - Visualizza Convocazione</string> 
-
+    <string name="label_aritmetica_principale">Matemapp - Aritmetica</string>
+    <string name="label_geometria_principale">Matemapp - Geometria</string>
+    
     <!-- menu da tasto -->
     <string name="versione_app">Versione App</string>
     <string name="action_share">Condividi con</string>    
     
     <!-- menu principale -->
-    <string name="bottone_crea_squadra">Crea Squadra</string>
-    <string name="bottone_modifica_squadra">Modifica Squadra</string>
-    <string name="bottone_elimina_squadra">Elimina Squadra</string>
-    <string name="bottone_crea_convocazione">Crea Convocazione</string>
-    <string name="bottone_visualizza_convocazioni">Visualizza Convocazioni</string>
+    <string name="bottone_aritmetica">Aritmetica</string>
+    <string name="bottone_geometria">Geometria</string>
     
+    <!-- materia principale -->
+    <string name="bottone_classe_prima">Classe Prima</string>
+    <string name="bottone_classe_seconda">Classe Seconda</string>
+    <string name="bottone_classe_terza">Classe Terza</string>
     
     <!-- crea utenza -->
     <string name="hint_text_username_admin">Username Admin</string>

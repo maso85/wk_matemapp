@@ -3,6 +3,9 @@
  */
 package com.firenze1985.matemapp;
 
+import com.firenze1985.matemapp.aritmetica.AritmeticaPrincipale;
+import com.firenze1985.matemapp.geometria.GeometriaPrincipale;
+
 import packageActivity.BaseActivity;
 import packageActivity.MainActivity;
 import android.content.Intent;
@@ -43,11 +46,8 @@ public class MenuPrincipale extends MainActivity {
 	
 	
 	/* ********************************* DICHIARAZIONE VARIABILI ***************************************** */
-	Button buttonCreaSquadra;
-	Button buttonCreaConvocazione;
-	Button buttonModificaSquadra;
-	Button buttonEliminaSquadra;
-	Button buttonVisualizzaConvocazioni;
+	Button buttonAritmetica;
+	Button buttonGeometria;
 	/* ************************************************************************************************** */
 	
 	
@@ -57,72 +57,32 @@ public class MenuPrincipale extends MainActivity {
 		setSuperParameter();		
 		setContentView(R.layout.menuprincipale_layout);	
 		
-		// gestione bottone crea squadra
-		setButtonCreaSquadra((Button)findViewById(R.id.idBottoneCreaSquadra));
-		getButtonCreaSquadra().setOnClickListener(new OnClickListener(){
+		// gestione bottone aritmetica
+		setButtonAritmetica((Button)findViewById(R.id.idBottoneAritmetica));
+		getButtonAritmetica().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {			
-				// si lancia la activity CreaSquadra
-				//Intent intent = new Intent(getApplicationContext(), CreaSquadra.class);
-	  			//startActivity(intent);			
+				// si lancia la activity AritmeticaPrincipale
+				Intent intent = new Intent(getApplicationContext(), AritmeticaPrincipale.class);
+				startActivity(intent);			
 				}			
 			}
 		);
 		//
 		
 		
-		// gestione bottone crea convocazione
-		setButtonCreaConvocazione((Button)findViewById(R.id.idBottoneCreaConvocazione));
-		getButtonCreaConvocazione().setOnClickListener(new OnClickListener(){			
+		// gestione bottone geometria
+		setButtonGeometria((Button)findViewById(R.id.idBottoneGeometria));
+		getButtonGeometria().setOnClickListener(new OnClickListener(){			
 			@Override
 			public void onClick(View v) {			
-				// si lancia la activity CreaConvocazione
-				//Intent intent = new Intent(getApplicationContext(), SmistatoreMultiSquadra.class);
-				//intent.putExtra("smistatoreIntent", CreaConvocazione.class);
-				//startActivity(intent);
+				// si lancia la activity GeometriaPrincipale
+				Intent intent = new Intent(getApplicationContext(), GeometriaPrincipale.class);
+				startActivity(intent);
 			}
 		});
 		//
 		
-		// gestione bottone modifica squadra
-		setButtonModificaSquadra((Button)findViewById(R.id.idBottoneModificaSquadra));
-		getButtonModificaSquadra().setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {			
-				// si lancia la activity ModificaSquadra
-				//Intent intent = new Intent(getApplicationContext(), SmistatoreMultiSquadra.class);
-				//intent.putExtra("smistatoreIntent", ModificaSquadra.class);
-				//startActivity(intent);
-			}
-		});
-		//
-		
-		
-		// gestione bottone elimina squadra
-		setButtonEliminaSquadra((Button)findViewById(R.id.idBottoneEliminaSquadra));
-		getButtonEliminaSquadra().setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {				
-				// si lancia la activity EliminaSquadra
-				//Intent intent = new Intent(getApplicationContext(), SmistatoreMultiSquadra.class);
-				//intent.putExtra("smistatoreIntent", EliminaSquadra.class);
-				//startActivity(intent);
-			}
-		});
-		//
-		
-		
-		// gestione bottone visualizza convocazioni
-		setButtonVisualizzaConvocazioni((Button)findViewById(R.id.idBottoneVisualizzaConvocazioni));
-		getButtonVisualizzaConvocazioni().setOnClickListener(new OnClickListener(){
-			@Override
-			public void onClick(View v) {
-				// si lancia la activity VisualizzaConvocazioni
-				//Intent intent = new Intent(getApplicationContext(), VisualizzaConvocazioni.class);
-	  			//startActivity(intent);				
-			}			
-		});
-		//
 
 	}
 		
@@ -131,74 +91,34 @@ public class MenuPrincipale extends MainActivity {
 	
 	/* ************************************* GETTER E SETTER ****************************************** */
 	/**
-	 * @return the buttonCreaSquadra
+	 * @return the buttonAritmetica
 	 */
-	public Button getButtonCreaSquadra() {
-		return buttonCreaSquadra;
+	public Button getButtonAritmetica() {
+		return buttonAritmetica;
 	}
 
 	/**
-	 * @param buttonCreaSquadra the buttonCreaSquadra to set
+	 * @param buttonAritmetica the buttonAritmetica to set
 	 */
-	public void setButtonCreaSquadra(Button buttonCreaSquadra) {
-		this.buttonCreaSquadra = buttonCreaSquadra;
+	public void setButtonAritmetica(Button buttonAritmetica) {
+		this.buttonAritmetica = buttonAritmetica;
 	}
 
 	/**
-	 * @return the buttonCreaConvocazione
+	 * @return the buttonGeometria
 	 */
-	public Button getButtonCreaConvocazione() {
-		return buttonCreaConvocazione;
+	public Button getButtonGeometria() {
+		return buttonGeometria;
 	}
 
 	/**
-	 * @param buttonCreaConvocazione the buttonCreaConvocazione to set
+	 * @param buttonGeometria the buttonGeometria to set
 	 */
-	public void setButtonCreaConvocazione(Button buttonCreaConvocazione) {
-		this.buttonCreaConvocazione = buttonCreaConvocazione;
+	public void setButtonGeometria(Button buttonGeometria) {
+		this.buttonGeometria = buttonGeometria;
 	}
 
-	/**
-	 * @return the buttonModificaSquadra
-	 */
-	public Button getButtonModificaSquadra() {
-		return buttonModificaSquadra;
-	}
 
-	/**
-	 * @param buttonModificaSquadra the buttonModificaSquadra to set
-	 */
-	public void setButtonModificaSquadra(Button buttonModificaSquadra) {
-		this.buttonModificaSquadra = buttonModificaSquadra;
-	}
-
-	/**
-	 * @return the buttonEsci
-	 */
-	public Button getButtonVisualizzaConvocazioni() {
-		return buttonVisualizzaConvocazioni;
-	}
-
-	/**
-	 * @param buttonEsci the buttonEsci to set
-	 */
-	public void setButtonVisualizzaConvocazioni(Button buttonVisualizzaConvocazioni) {
-		this.buttonVisualizzaConvocazioni = buttonVisualizzaConvocazioni;
-	}
-
-	/**
-	 * @return the buttonEliminaSquadra
-	 */
-	public Button getButtonEliminaSquadra() {
-		return buttonEliminaSquadra;
-	}
-	
-	/**
-	 * @param buttonEliminaSquadra the buttonEliminaSquadra to set
-	 */
-	public void setButtonEliminaSquadra(Button buttonEliminaSquadra) {
-		this.buttonEliminaSquadra = buttonEliminaSquadra;
-	}
 	/* ************************************************************************************************ */
 	
 }
