@@ -23,6 +23,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.AritmeticaPrincipale"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_principale">
+        </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.Frazioni"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_principale">
+        </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap1"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_principale">
+        </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.geometria.GeometriaPrincipale"
+            android:noHistory="true"
+            android:label="@string/label_geometria_principale">
+        </activity>
     </application>
 
 </manifest>

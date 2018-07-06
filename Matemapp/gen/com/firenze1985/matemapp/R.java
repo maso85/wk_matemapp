@@ -23,185 +23,121 @@ public final class R {
     }
     public static final class drawable {
         public static final int background_button_aggiungi=0x7f020000;
-        public static final int background_button_menu_principale=0x7f020001;
-        public static final int background_button_normal=0x7f020002;
-        public static final int background_button_pressed=0x7f020003;
-        public static final int background_button_salva=0x7f020004;
-        public static final int ic_launcher=0x7f020005;
-        public static final int ic_launcher_2=0x7f020006;
-        public static final int ic_launcher_magic=0x7f020007;
-        public static final int logo_conv1126_formato72x72=0x7f020008;
+        public static final int background_button_aritmetica=0x7f020001;
+        public static final int background_button_aritmetica_normal=0x7f020002;
+        public static final int background_button_aritmetica_pressed=0x7f020003;
+        public static final int background_button_geometria=0x7f020004;
+        public static final int background_button_geometria_normal=0x7f020005;
+        public static final int background_button_geometria_pressed=0x7f020006;
+        public static final int background_button_menu_principale=0x7f020007;
+        public static final int background_button_normal=0x7f020008;
+        public static final int background_button_pressed=0x7f020009;
+        public static final int background_button_salva=0x7f02000a;
+        public static final int ic_launcher=0x7f02000b;
+        public static final int ic_launcher_2=0x7f02000c;
+        public static final int ic_launcher_magic=0x7f02000d;
+        public static final int logo_conv1126_formato72x72=0x7f02000e;
     }
     public static final class id {
-        public static final int btn_poids=0x7f080036;
-        public static final int btn_poids111=0x7f080037;
-        public static final int checkBox1=0x7f08002d;
-        public static final int idBottoneAggiungiGiocatore=0x7f080021;
-        public static final int idBottoneCreaConvocazione=0x7f080034;
-        public static final int idBottoneCreaSquadra=0x7f080031;
-        public static final int idBottoneElencoConvocati=0x7f080004;
-        public static final int idBottoneEliminaGiocatore=0x7f080038;
-        public static final int idBottoneEliminaSquadra=0x7f080033;
-        public static final int idBottoneInformazioniPartita=0x7f080005;
-        public static final int idBottoneModificaSquadra=0x7f080032;
-        public static final int idBottoneSalva=0x7f08001d;
-        public static final int idBottoneSalvaConvocazione=0x7f080003;
-        public static final int idBottoneVisualizzaConvocazioni=0x7f080035;
-        public static final int idButtonConfermaCreaUtenza=0x7f08002b;
-        public static final int idContenitoreElencoGiocatori=0x7f080023;
-        public static final int idEditTextConfermaPasswordAdmin=0x7f080026;
-        public static final int idEditTextConfermaPasswordUser=0x7f080029;
-        public static final int idEditTextDataPartita=0x7f08000d;
-        public static final int idEditTextInserisciGiocatore=0x7f080022;
-        public static final int idEditTextLuogoConvocazione=0x7f080015;
-        public static final int idEditTextLuogoPartita=0x7f080011;
-        public static final int idEditTextNomeSquadra=0x7f08001e;
-        public static final int idEditTextNote=0x7f080017;
-        public static final int idEditTextOrarioConvocazione=0x7f080013;
-        public static final int idEditTextOrarioPartita=0x7f08000f;
-        public static final int idEditTextPartita=0x7f080009;
-        public static final int idEditTextPasswordAdmin=0x7f080025;
-        public static final int idEditTextPasswordUser=0x7f080028;
-        public static final int idEditTextUsernameAdmin=0x7f080024;
-        public static final int idEditTextUsernameUser=0x7f080027;
-        public static final int idEditTextValevolePer=0x7f08000b;
-        public static final int idElementoGrigliaConvocazioni=0x7f08002c;
-        public static final int idGiocatoreVisualizzato=0x7f08002e;
-        public static final int idGrigliaConvocazioni=0x7f08003b;
-        public static final int idGrigliaElencoConvocati=0x7f080019;
-        public static final int idImageViewIconaApp=0x7f08001a;
-        public static final int idLayoutBottoniConvocazione=0x7f080002;
-        public static final int idLayoutDataPartita=0x7f08000c;
-        public static final int idLayoutElencoConvocati=0x7f080018;
-        public static final int idLayoutLuogoConvocazione=0x7f080014;
-        public static final int idLayoutLuogoPartita=0x7f080010;
-        public static final int idLayoutNote=0x7f080016;
-        public static final int idLayoutOrarioConvocazione=0x7f080012;
-        public static final int idLayoutOrarioPartita=0x7f08000e;
-        public static final int idLayoutPaginaConvocazioni=0x7f080001;
-        public static final int idLayoutPartita=0x7f080008;
-        public static final int idLayoutValevolePer=0x7f08000a;
-        public static final int idRelativeLayout=0x7f080020;
-        public static final int idScrollLayout=0x7f080006;
-        public static final int idSmistatoreMultiSquadraListaEspandibile=0x7f08003a;
-        public static final int idTextInformazioniPartita=0x7f080007;
-        public static final int idTextSpiegazioneCreazioneSquadra=0x7f08002a;
-        public static final int idTextViewFinto=0x7f08001b;
-        public static final int idTextViewNomeAppVersione=0x7f08001c;
-        public static final int idTextViewNumeroGiocatori=0x7f08001f;
-        public static final int idVisualizzaImmagine=0x7f08003c;
-        public static final int label=0x7f08002f;
-        public static final int laptop=0x7f080000;
-        public static final int listView1=0x7f08003d;
-        public static final int textList=0x7f08003e;
-        public static final int textout=0x7f080039;
-        public static final int versione_app=0x7f080030;
+        public static final int idBottoneAritmetica=0x7f080005;
+        public static final int idBottoneClassePrima=0x7f080001;
+        public static final int idBottoneClasseSeconda=0x7f080002;
+        public static final int idBottoneClasseTerza=0x7f080003;
+        public static final int idBottoneGeometria=0x7f080006;
+        public static final int idTestoFragment=0x7f080000;
+        public static final int pager=0x7f080007;
+        public static final int versione_app=0x7f080004;
     }
     public static final class layout {
-        public static final int activity_main=0x7f030000;
-        public static final int child_item=0x7f030001;
-        public static final int creaconvocazione_layout=0x7f030002;
-        public static final int creaconvocazionescroll_layout=0x7f030003;
-        public static final int creasquadra_layout=0x7f030004;
-        public static final int creautenza_layout=0x7f030005;
-        public static final int elementogrigliaconvocazioni_layout=0x7f030006;
-        public static final int gridvisualizza=0x7f030007;
-        public static final int group_item=0x7f030008;
-        public static final int menu_principale=0x7f030009;
-        public static final int menuprincipale_layout=0x7f03000a;
-        public static final int prova=0x7f03000b;
-        public static final int row=0x7f03000c;
-        public static final int rowvisualizza=0x7f03000d;
-        public static final int smistatoremultisquadra_layout=0x7f03000e;
-        public static final int visualizzaconvocazioni_layout=0x7f03000f;
-        public static final int visualizzaimmagine_layout=0x7f030010;
-        public static final int visualizzasquadra_layout=0x7f030011;
+        public static final int argomento_layout=0x7f030000;
+        public static final int fragment_layout=0x7f030001;
+        public static final int materiaprincipale_layout=0x7f030002;
+        public static final int menu_principale=0x7f030003;
+        public static final int menuprincipale_layout=0x7f030004;
+        public static final int viewpager_layout=0x7f030005;
     }
     public static final class menu {
         public static final int menu_principale=0x7f070000;
     }
     public static final class string {
-        public static final int action_settings=0x7f050040;
-        public static final int action_share=0x7f050009;
-        public static final int annulla=0x7f05003c;
+        public static final int action_settings=0x7f05003b;
+        public static final int action_share=0x7f050004;
+        public static final int annulla=0x7f050037;
         /**  nomi activity - nome intestazione layout 
          */
         public static final int app_name=0x7f050000;
-        public static final int bottone_aggiungi_giocatore=0x7f050018;
-        public static final int bottone_crea_convocazione=0x7f05000d;
+        public static final int bottone_aggiungi_giocatore=0x7f050013;
         /**  menu principale 
          */
-        public static final int bottone_crea_squadra=0x7f05000a;
-        public static final int bottone_elenco_convocati=0x7f050022;
-        public static final int bottone_elimina_giocatore=0x7f05001c;
-        public static final int bottone_elimina_squadra=0x7f05000c;
-        public static final int bottone_informazioni_partita=0x7f050023;
-        public static final int bottone_modifica_squadra=0x7f05000b;
-        public static final int bottone_salva=0x7f05001a;
+        public static final int bottone_aritmetica=0x7f050005;
+        /**  materia principale 
+         */
+        public static final int bottone_classe_prima=0x7f050007;
+        public static final int bottone_classe_seconda=0x7f050008;
+        public static final int bottone_classe_terza=0x7f050009;
+        public static final int bottone_elenco_convocati=0x7f05001d;
+        public static final int bottone_elimina_giocatore=0x7f050017;
+        public static final int bottone_geometria=0x7f050006;
+        public static final int bottone_informazioni_partita=0x7f05001e;
+        public static final int bottone_salva=0x7f050015;
         /**  crea convocazione 
          */
-        public static final int bottone_salva_convocazione=0x7f050021;
-        public static final int bottone_visualizza=0x7f05001b;
-        public static final int bottone_visualizza_convocazioni=0x7f05000e;
-        public static final int conferma_crea_utenza=0x7f050016;
-        public static final int conferma_eliminazione_squadra=0x7f050039;
-        public static final int convocazione_creata_con_successo=0x7f050038;
-        public static final int elimina=0x7f05003a;
-        public static final int giocatoriInRosa=0x7f05003d;
-        public static final int hello_world=0x7f05003f;
-        public static final int hint_text_conferma_password_admin=0x7f050011;
-        public static final int hint_text_conferma_password_user=0x7f050014;
-        public static final int hint_text_data_partita=0x7f050029;
-        public static final int hint_text_inserisci_giocatore=0x7f050019;
-        public static final int hint_text_luogo_convocazione=0x7f050031;
-        public static final int hint_text_luogo_partita=0x7f05002d;
-        public static final int hint_text_nome_squadra=0x7f05001e;
-        public static final int hint_text_note=0x7f050033;
-        public static final int hint_text_orario_convocazione=0x7f05002f;
-        public static final int hint_text_orario_partita=0x7f05002b;
-        public static final int hint_text_partita=0x7f050025;
-        public static final int hint_text_password_admin=0x7f050010;
-        public static final int hint_text_password_user=0x7f050013;
+        public static final int bottone_salva_convocazione=0x7f05001c;
+        public static final int bottone_visualizza=0x7f050016;
+        public static final int conferma_crea_utenza=0x7f050011;
+        public static final int conferma_eliminazione_squadra=0x7f050034;
+        public static final int convocazione_creata_con_successo=0x7f050033;
+        public static final int elimina=0x7f050035;
+        public static final int giocatoriInRosa=0x7f050038;
+        public static final int hello_world=0x7f05003a;
+        public static final int hint_text_conferma_password_admin=0x7f05000c;
+        public static final int hint_text_conferma_password_user=0x7f05000f;
+        public static final int hint_text_data_partita=0x7f050024;
+        public static final int hint_text_inserisci_giocatore=0x7f050014;
+        public static final int hint_text_luogo_convocazione=0x7f05002c;
+        public static final int hint_text_luogo_partita=0x7f050028;
+        public static final int hint_text_nome_squadra=0x7f050019;
+        public static final int hint_text_note=0x7f05002e;
+        public static final int hint_text_orario_convocazione=0x7f05002a;
+        public static final int hint_text_orario_partita=0x7f050026;
+        public static final int hint_text_partita=0x7f050020;
+        public static final int hint_text_password_admin=0x7f05000b;
+        public static final int hint_text_password_user=0x7f05000e;
         /**  crea utenza 
          */
-        public static final int hint_text_username_admin=0x7f05000f;
-        public static final int hint_text_username_user=0x7f050012;
-        public static final int hint_text_valevole_per=0x7f050027;
-        public static final int inserisci_almeno_un_giocatore=0x7f050035;
-        public static final int label_pagina_crea_convocazione=0x7f050005;
-        public static final int label_pagina_crea_squadra=0x7f050002;
-        public static final int label_pagina_elimina_squadra=0x7f050004;
-        public static final int label_pagina_menu_principale=0x7f050001;
-        public static final int label_pagina_modifica_squadra=0x7f050003;
-        public static final int label_pagina_smimstatore_multisquadra=0x7f050006;
-        public static final int label_pagina_visualizza_convocazione=0x7f050007;
-        public static final int scegli_orario_convocazione=0x7f050036;
-        public static final int scegli_orario_partita=0x7f050037;
+        public static final int hint_text_username_admin=0x7f05000a;
+        public static final int hint_text_username_user=0x7f05000d;
+        public static final int hint_text_valevole_per=0x7f050022;
+        public static final int inserisci_almeno_un_giocatore=0x7f050030;
+        public static final int label_aritmetica_principale=0x7f050001;
+        public static final int label_geometria_principale=0x7f050002;
+        public static final int scegli_orario_convocazione=0x7f050031;
+        public static final int scegli_orario_partita=0x7f050032;
         /**  stringhe usate lato java 
          */
-        public static final int squadra_creata_con_successo=0x7f050034;
-        public static final int squadra_eliminata_con_successo=0x7f05003b;
-        public static final int squadre=0x7f05003e;
+        public static final int squadra_creata_con_successo=0x7f05002f;
+        public static final int squadra_eliminata_con_successo=0x7f050036;
+        public static final int squadre=0x7f050039;
         /**  visualizza squadra 
          */
-        public static final int testo_checkbox_Giocatore_visualizzato=0x7f050020;
+        public static final int testo_checkbox_Giocatore_visualizzato=0x7f05001b;
         /**  crea squadra 
          */
-        public static final int text_crea_rosa=0x7f050017;
-        public static final int text_data_partita=0x7f050028;
-        public static final int text_indicazione_nome_giocatore=0x7f05001f;
-        public static final int text_indicazione_nome_squadra=0x7f05001d;
-        public static final int text_luogo_convocazione=0x7f050030;
-        public static final int text_luogo_partita=0x7f05002c;
-        public static final int text_note=0x7f050032;
-        public static final int text_orario_convocazione=0x7f05002e;
-        public static final int text_orario_partita=0x7f05002a;
-        public static final int text_partita=0x7f050024;
-        public static final int text_spiegazione_creazione_squadra=0x7f050015;
-        public static final int text_valevole_per=0x7f050026;
+        public static final int text_crea_rosa=0x7f050012;
+        public static final int text_data_partita=0x7f050023;
+        public static final int text_indicazione_nome_giocatore=0x7f05001a;
+        public static final int text_indicazione_nome_squadra=0x7f050018;
+        public static final int text_luogo_convocazione=0x7f05002b;
+        public static final int text_luogo_partita=0x7f050027;
+        public static final int text_note=0x7f05002d;
+        public static final int text_orario_convocazione=0x7f050029;
+        public static final int text_orario_partita=0x7f050025;
+        public static final int text_partita=0x7f05001f;
+        public static final int text_spiegazione_creazione_squadra=0x7f050010;
+        public static final int text_valevole_per=0x7f050021;
         /**  menu da tasto 
          */
-        public static final int versione_app=0x7f050008;
+        public static final int versione_app=0x7f050003;
     }
     public static final class style {
         /** 
