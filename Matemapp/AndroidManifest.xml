@@ -29,14 +29,19 @@
             android:label="@string/label_aritmetica_principale">
         </activity>
         <activity
-            android:name="com.firenze1985.matemapp.aritmetica.Frazioni"
+            android:name="com.firenze1985.matemapp.aritmetica.AritmeticaPrima"
             android:noHistory="true"
             android:label="@string/label_aritmetica_principale">
         </activity>
         <activity
-            android:name="com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap1"
+            android:name="com.firenze1985.matemapp.aritmetica.Frazioni"
             android:noHistory="true"
-            android:label="@string/label_aritmetica_principale">
+            android:label="@string/label_aritmetica_frazioni">
+        </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.Somma"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_somma">
         </activity>
         <activity
             android:name="com.firenze1985.matemapp.geometria.GeometriaPrincipale"
