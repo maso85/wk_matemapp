@@ -25,15 +25,16 @@ public class Frazioni extends FragmentActivity {
     TabPagerAdapter TabAdapter;
 	ActionBar actionBar;
 
-    @Override
+    @SuppressWarnings("deprecation")
+	@Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.viewpager_layout);
 
-        TabAdapter = new TabPagerAdapter(getSupportFragmentManager());
+        TabAdapter = new TabPagerAdapter(getSupportFragmentManager(), getApplicationContext(), findViewById(R.layout.viewpager_layout));
 
         Tab = (ViewPager)findViewById(R.id.pager);
-        Tab.setOnPageChangeListener(
+        Tab.addOnPageChangeListener(
                 new ViewPager.SimpleOnPageChangeListener() {
                     @Override
                     public void onPageSelected(int position) {
@@ -55,7 +56,7 @@ public class Frazioni extends FragmentActivity {
 			@Override
 			public void onTabSelected(android.app.ActionBar.Tab tab,
 					FragmentTransaction ft) {
-				// TODO Auto-generated method stub
+				Tab.setCurrentItem(tab.getPosition());
 				
 			}
 
