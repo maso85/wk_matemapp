@@ -64,14 +64,38 @@ public class AritmeticaPrincipale extends GenericActivity {
 			@Override
 			public void onClick(View v) {			
 				// si lancia la activity AritmeticaPrincipale
-				Intent intent = new Intent(getApplicationContext(), Frazioni.class);
+				Intent intent = new Intent(getApplicationContext(), AritmeticaPrima.class);
+				startActivity(intent);			
+				}			
+			}
+		);
+		//
+		
+		// gestione bottone aritmetica
+		setButtonClasseSeconda((Button)findViewById(R.id.idBottoneClasseSeconda));
+		getButtonClasseSeconda().setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {			
+				// si lancia la activity AritmeticaPrincipale
+				Intent intent = new Intent(getApplicationContext(), Somma.class);
 				startActivity(intent);			
 				}			
 			}
 		);
 		//
 				
-					
+		// gestione bottone aritmetica
+		setButtonClasseTerza((Button)findViewById(R.id.idBottoneClasseTerza));
+		getButtonClasseTerza().setOnClickListener(new OnClickListener(){
+			@Override
+			public void onClick(View v) {			
+				// si lancia la activity AritmeticaPrincipale
+				Intent intent = new Intent(getApplicationContext(), Frazioni.class);
+				startActivity(intent);			
+				}			
+			}
+		);
+		//					
 	}
 	
 	/* ************************************ GETTER E SETTER *********************************************/

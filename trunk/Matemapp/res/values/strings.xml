@@ -4,6 +4,8 @@
     <string name="app_name">Matemapp</string>
     <string name="label_aritmetica_principale">Matemapp - Aritmetica</string>
     <string name="label_geometria_principale">Matemapp - Geometria</string>
+    <string name="label_aritmetica_frazioni">Matemapp - Frazioni</string>
+    <string name="label_aritmetica_somma">Matemapp - Somma</string>
     
     <!-- menu da tasto -->
     <string name="versione_app">Versione App</string>
