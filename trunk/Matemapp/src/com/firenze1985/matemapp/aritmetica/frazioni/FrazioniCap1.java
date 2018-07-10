@@ -8,6 +8,7 @@ import com.firenze1985.matemapp.R;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,11 +31,28 @@ public class FrazioniCap1 extends Argomento {
         LinearLayout linear = (LinearLayout)android.findViewById(R.id.idLinearLayoutArgomento);
         
         
-        ((TextView)android.findViewById(R.id.idTestoFragment)).setText(testoDaLeggere);
-        
-        inserisciTesto(linear,"frazioni, capitolo 1");
-        inserisciTesto(linear,"sono nel primo capitolo dell'argomento frazioni");
-       
+        //((TextView)android.findViewById(R.id.idTestoFragment)).setText(testoDaLeggere);
+        inserisciTitolo(linear, "Le frazioni");
+        inserisciTitoloParagrafo(linear,"Capitolo 1");
+        inserisciStacco(linear);
+        inserisciTestoConParteInGrassetto(linear,"\u00C8 possibile che, durante alcune lezioni di matematica, tu abbia già sentito parlare di questa parola strana: frazioni",109, 117);
+        inserisciTesto(linear, "Ma che cosa è una frazione?");
+        inserisciTesto(linear, "Tieni bene a mente questa frase:");
+        String testoPersonalizzato = "una frazione è un modo alternativo di scrivere un numero decimale, ossia un numero con la virgola";
+        inserisciTestoPersonalizzato(linear,testoPersonalizzato, true, true, 0, 0, true, false, 83, testoPersonalizzato.length(), false, false, 0, 0);
+        inserisciStacco(linear);
+        testoPersonalizzato = "Esatto. Proprio così. Una frazione non è altro che un numero ma scritto in una lingua differente.";
+        inserisciTestoPersonalizzato(linear, testoPersonalizzato, false, false, 0, 0, true, false, 81, 87, false, false, 0, 0);
+        /*
+        inserisciTestoGrandezzaPersonalizzata(linear, "vediamo che combina grandezza a 14", TypedValue.COMPLEX_UNIT_DIP, 14, false);
+        inserisciTestoConParteInGrassetto(linear,"Supercalifragilistichespiralidoso", 4, 5);
+        inserisciStacco(linear);
+        inserisciTestoGrandezzaPersonalizzata(linear, "vediamo che combina grandezza a 12", TypedValue.COMPLEX_UNIT_DIP, 12, false);
+        inserisciTestoGrandezzaPersonalizzata(linear, "vediamo che combina grandezza a 13", TypedValue.COMPLEX_UNIT_DIP, 13, false);
+        inserisciTestoGrandezzaPersonalizzata(linear, "vediamo che combina grandezza a 14", TypedValue.COMPLEX_UNIT_DIP, 14, false);
+        inserisciTestoGrandezzaPersonalizzata(linear, "vediamo che combina grandezza a 15", TypedValue.COMPLEX_UNIT_DIP, 15, false);
+        inserisciTestoGrandezzaPersonalizzata(linear, "vediamo che combina grandezza a 17", TypedValue.COMPLEX_UNIT_DIP, 17, true);
+        */
         return android;
 	}
 	
