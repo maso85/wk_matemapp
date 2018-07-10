@@ -23,6 +23,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- ARITMETICA: principale e divisioni per anno -->
         <activity
             android:name="com.firenze1985.matemapp.aritmetica.AritmeticaPrincipale"
             android:noHistory="true"
@@ -34,6 +35,17 @@
             android:label="@string/label_aritmetica_principale">
         </activity>
         <activity
+            android:name="com.firenze1985.matemapp.aritmetica.AritmeticaSeconda"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_principale">
+        </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.AritmeticaTerza"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_principale">
+        </activity>
+        <!-- ARITMETICA: argomenti -->      
+        <activity
             android:name="com.firenze1985.matemapp.aritmetica.Frazioni"
             android:noHistory="true"
             android:label="@string/label_aritmetica_frazioni">
@@ -43,11 +55,27 @@
             android:noHistory="true"
             android:label="@string/label_aritmetica_somma">
         </activity>
+        <!-- GEOMETRIA: principale e divisioni per anno -->
         <activity
             android:name="com.firenze1985.matemapp.geometria.GeometriaPrincipale"
             android:noHistory="true"
             android:label="@string/label_geometria_principale">
-        </activity>
+       </activity>
+       <activity
+            android:name="com.firenze1985.matemapp.geometria.GeometriaPrima"
+            android:noHistory="true"
+            android:label="@string/label_geometria_principale">
+       </activity>
+       <activity
+            android:name="com.firenze1985.matemapp.geometria.GeometriaSeconda"
+            android:noHistory="true"
+            android:label="@string/label_geometria_principale">
+       </activity>
+       <activity
+            android:name="com.firenze1985.matemapp.geometria.GeometriaTerza"
+            android:noHistory="true"
+            android:label="@string/label_geometria_principale">
+        </activity>        
     </application>
 
 </manifest>

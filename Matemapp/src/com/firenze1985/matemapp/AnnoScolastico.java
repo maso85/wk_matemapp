@@ -126,7 +126,7 @@ public abstract class AnnoScolastico extends GenericActivity {
 				array = Const.ARGOMENTI_ARITMETICA_PRIMA;
 			} else if (annoScolasticoRecuperato == Const.CLASSE_SECONDA) {
 				array = Const.ARGOMENTI_ARITMETICA_SECONDA;
-			} else if (annoScolasticoRecuperato == Const.CLASSE_SECONDA) {
+			} else if (annoScolasticoRecuperato == Const.CLASSE_TERZA) {
 				array = Const.ARGOMENTI_ARITMETICA_TERZA;
 			}
 		} else if (materiaRecuperata == Const.GEOMETRIA) {
@@ -134,7 +134,7 @@ public abstract class AnnoScolastico extends GenericActivity {
 				array = Const.ARGOMENTI_GEOMETRIA_PRIMA;
 			} else if (annoScolasticoRecuperato == Const.CLASSE_SECONDA) {
 				array = Const.ARGOMENTI_GEOMETRIA_SECONDA;
-			} else if (annoScolasticoRecuperato == Const.CLASSE_SECONDA) {
+			} else if (annoScolasticoRecuperato == Const.CLASSE_TERZA) {
 				array = Const.ARGOMENTI_GEOMETRIA_TERZA;
 			}
 		}
