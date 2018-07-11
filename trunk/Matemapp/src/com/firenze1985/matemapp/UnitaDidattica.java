@@ -93,7 +93,11 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
 			//Add New Tab
 			for (int i = 0; i < TabAdapter.getCount(); i++) {
 				int numeroPagina = i + 1;
-				myActionBar.addTab(myActionBar.newTab().setText("pagina "+numeroPagina).setTabListener(tabListener));
+				if (i == TabAdapter.getCount() - 1) {
+					myActionBar.addTab(myActionBar.newTab().setText("esercizi").setTabListener(tabListener));	
+				} else {
+					myActionBar.addTab(myActionBar.newTab().setText("pagina "+numeroPagina).setTabListener(tabListener));
+				}
 			}
     }
     
