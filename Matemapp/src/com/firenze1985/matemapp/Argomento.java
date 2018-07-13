@@ -10,6 +10,7 @@ import java.util.Map;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
+import android.graphics.drawable.GradientDrawable;
 import android.support.v4.app.Fragment;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -349,10 +350,66 @@ public class Argomento extends Fragment {
 		}
 		inserisciStacco();
 		inizializzaTextView();
+		textView.setPadding(4, 0, 4, 0);    
 		textView.setText(str);
 		textView.setBackgroundColor(Color.parseColor(BACKGROUND_DEFINIZIONE));
 		getLinear().addView(textView);
 		inserisciStacco();
+	}
+	
+	/**
+	 * Metodo che restituisce un testo con più parti in grassetto, passate attraverso un <i>HashMap</i> 
+	 * @param testo
+	 * @param mappaPartiInGrassetto
+	 */
+	protected void inserisciTestoConPiuPartiInGrassetto(String testo, HashMap mappaPartiInGrassetto) {
+		Iterator i = mappaPartiInGrassetto.entrySet().iterator();
+		SpannableStringBuilder str = new SpannableStringBuilder(testo);
+		while (i.hasNext()) {
+	        Map.Entry mappa = (Map.Entry)i.next();
+	        preparaTestoConParteInGrassetto(str, testo, ((Integer)mappa.getKey()).intValue(), ((Integer)mappa.getValue()).intValue());
+		}
+		inizializzaTextView();
+		textView.setText(str);
+		getLinear().addView(textView);
+
+	}
+	/**
+	 * Metodo che inserisce un riquadro rosso #880000
+	 * @param testo
+	 */
+	protected void inserisciTestoConRiquadro(String testo) {
+		inizializzaTextView();
+		GradientDrawable gd = new GradientDrawable();
+        gd.setColor(Color.parseColor("#FFFFFF")); // Changes this drawbale to use a single color instead of a gradient
+        gd.setStroke(2, Color.parseColor("#880000"));
+		textView.setPadding(4, 0, 4, 0);    
+        textView.setBackground(gd);
+        textView.setText(testo);
+        getLinear().addView(textView);
+	}
+	
+	protected void inserisciTestoColoratoInGrassetto(String testo, String colore) {
+		inizializzaTextView();
+		textView.setText(testo);
+        textView.setTypeface(null, Typeface.BOLD);
+		textView.setTextColor(Color.parseColor(colore));
+		getLinear().addView(textView);
+	}
+	
+	
+	protected void inserisciTestoConRiquadroConclusivo(String testo) {
+		inserisciTestoColoratoInGrassetto("Conclusioni", "#880000");
+		inizializzaTextView();
+		GradientDrawable gd = new GradientDrawable();
+        gd.setColor(Color.parseColor("#FFFFFF")); // Changes this drawbale to use a single color instead of a gradient
+        gd.setStroke(2, Color.parseColor("#880000"));
+		textView.setPadding(4, 0, 4, 0);    
+        textView.setBackground(gd);
+        textView.setText(testo);
+        textView.setTextColor(Color.parseColor("#880000"));
+        getLinear().addView(textView);
+		
 	}
 	
 }
