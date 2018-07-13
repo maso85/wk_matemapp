@@ -4,16 +4,10 @@
 package com.firenze1985.matemapp.aritmetica;
 
 import packageActivity.BaseActivity;
-import packageActivity.GenericActivity;
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
+import android.view.WindowManager;
 
 import com.firenze1985.matemapp.Materia;
 import com.firenze1985.matemapp.MenuPrincipale;
-import com.firenze1985.matemapp.R;
 
 /**
  * @author Administrator
@@ -36,6 +30,7 @@ public class AritmeticaPrincipale extends Materia {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setClassePrima(AritmeticaPrima.class);
 		setClasseSeconda(AritmeticaSeconda.class);
 		setClasseTerza(AritmeticaTerza.class);

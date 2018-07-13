@@ -4,9 +4,6 @@
 package com.firenze1985.matemapp;
 import java.util.HashMap;
 import java.util.List;
- 
-
-import com.firenze1985.matemapp.R;
 
 import android.content.Context;
 import android.graphics.Typeface;

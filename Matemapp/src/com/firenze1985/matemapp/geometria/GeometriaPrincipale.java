@@ -4,16 +4,9 @@
 package com.firenze1985.matemapp.geometria;
 
 import packageActivity.BaseActivity;
-import packageActivity.GenericActivity;
-import android.os.Bundle;
-import android.widget.Button;
 
 import com.firenze1985.matemapp.Materia;
 import com.firenze1985.matemapp.MenuPrincipale;
-import com.firenze1985.matemapp.R;
-import com.firenze1985.matemapp.aritmetica.AritmeticaPrima;
-import com.firenze1985.matemapp.aritmetica.AritmeticaSeconda;
-import com.firenze1985.matemapp.aritmetica.AritmeticaTerza;
 
 /**
  * @author Administrator

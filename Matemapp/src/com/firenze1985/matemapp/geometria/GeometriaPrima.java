@@ -4,7 +4,7 @@
 package com.firenze1985.matemapp.geometria;
 
 import com.firenze1985.matemapp.AnnoScolastico;
-import com.firenze1985.matemapp.Const;
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Administrator

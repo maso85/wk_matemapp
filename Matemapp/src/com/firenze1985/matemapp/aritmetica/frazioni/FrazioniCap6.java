@@ -8,12 +8,12 @@ import java.util.HashMap;
 import java.util.List;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
+import com.firenze1985.matemapp.Argomento;
 import com.firenze1985.matemapp.EserciziListAdapter;
 import com.firenze1985.matemapp.R;
 
@@ -21,28 +21,22 @@ import com.firenze1985.matemapp.R;
  * @author Administrator
  *
  */
-public class FrazioniCap6 extends Fragment {
+public class FrazioniCap6 extends Argomento {
 	
 	View androidView;
 	ExpandableListView listView;
 	private List<String> listaEsercizi;
     private HashMap<String, List<String>> hashMapPassaggiEsercizi;
 		
-	String testoDaLeggere = "Sesta e ultima pagina";
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 
         setAndroidView(inflater.inflate(R.layout.argomentolistaesercizi_layout, container, false));
         setListView((ExpandableListView) getAndroidView().findViewById(R.id.idListaEsercizi));
-        //((TextView)getAndroidView().findViewById(R.id.idTestoFragment)).setText(testoDaLeggere);
 
-        //inizializzaListaEsercizi();
         prepareListData();
-        //EserciziListAdapter adapter = new EserciziListAdapter(getContext(), R.layout.elementolistaesercizi_layout, list);
         EserciziListAdapter adapter = new EserciziListAdapter(getContext(), getListaEsercizi(), getHashMapPassaggiEsercizi());
-       
-        
  
         getListView().setAdapter(adapter);
         

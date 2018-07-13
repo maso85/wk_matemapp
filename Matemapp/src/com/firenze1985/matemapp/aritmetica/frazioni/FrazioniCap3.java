@@ -3,37 +3,27 @@
  */
 package com.firenze1985.matemapp.aritmetica.frazioni;
 
-import com.firenze1985.matemapp.R;
-
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
-import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
+
+import com.firenze1985.matemapp.Argomento;
 
 /**
  * @author Administrator
  *
  */
-public class FrazioniCap3 extends Fragment {
+public class FrazioniCap3 extends Argomento {
 	
-	String testoDaLeggere = "Terza pag. \u221A9 = 3";
 	@Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
 
-        View android = inflater.inflate(R.layout.argomento_layout, container, false);       
-        ((TextView)android.findViewById(R.id.idTestoFragment)).setText(testoDaLeggere);
-        return android;
+		settaggioViewLayoutTitoliPaginaClassica(inflater, container, "Le frazioni", "Capitolo 3");
+      
+        inserisciTesto("Terza pag. \u221A9 = 3");       
+        return getAndroidView();
 	}
 	
-	public FrazioniCap3() {
-	}
-	
-	public FrazioniCap3(String stringaPassata) {
-		new FrazioniCap3();
-		//testoDaLeggere = stringaPassata;
-	}
 }

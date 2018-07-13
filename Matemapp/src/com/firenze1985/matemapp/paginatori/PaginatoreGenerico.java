@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.firenze1985.matemapp;
+package com.firenze1985.matemapp.paginatori;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -18,7 +18,8 @@ public class PaginatoreGenerico extends FragmentStatePagerAdapter {
 	
 	Context contesto;
 	View layoutDiPagina;
-
+	int numeroPagine;
+	
 	
 	/**
 	 * @return the contesto
@@ -49,8 +50,25 @@ public class PaginatoreGenerico extends FragmentStatePagerAdapter {
 	
 	
 	
-	public PaginatoreGenerico(FragmentManager fm) {
+	/**
+	 * @return the numeroPagine
+	 */
+	public int getNumeroPagine() {
+		return numeroPagine;
+	}
+
+	/**
+	 * @param numeroPagine the numeroPagine to set
+	 */
+	public void setNumeroPagine(int numeroPagine) {
+		this.numeroPagine = numeroPagine;
+	}
+
+	public PaginatoreGenerico(FragmentManager fm, Context contesto, View layoutDiPagina, int numPagine) {
 		super(fm);
+		setContesto(contesto);
+		setLayoutDiPagina(layoutDiPagina);
+		setNumeroPagine(numPagine);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -69,7 +87,7 @@ public class PaginatoreGenerico extends FragmentStatePagerAdapter {
 	@Override
 	public int getCount() {
 		// TODO Auto-generated method stub
-		return 0;
+		return getNumeroPagine();
 	}
 
 }

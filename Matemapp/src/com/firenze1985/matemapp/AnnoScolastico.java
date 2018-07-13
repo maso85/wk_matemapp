@@ -5,14 +5,17 @@ package com.firenze1985.matemapp;
 
 import java.util.ArrayList;
 
+import com.firenze1985.matemapp.utility.Const;
+
+import packageActivity.BaseActivity;
+import packageActivity.GenericActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import packageActivity.BaseActivity;
-import packageActivity.GenericActivity;
 
 /**
  * @author Administrator
@@ -41,6 +44,7 @@ public abstract class AnnoScolastico extends GenericActivity {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setAttributi();
 	}
 	/* ************************************************************************************************************/
