@@ -1,0 +1,39 @@
+Aggiornato al 2018_07_13
+
+Materia 						(aritmetica)
+	AnnoScolastico 				(prima)
+		UnitaDidattica 			(frazioni)
+			Argomento			(frazioniCap1, pagina classica)
+			Argomento			(frazioniCap2, pagina classica)
+			...
+			Argomento			(frazioniCap6, pagina expandabilelistview esercizi)
+			
+how to INSERIRE NUOVA UNITA DIDATTICA E RELATIVE PAGINE DI ARGOMENTO:
+1) Nella classe Const:
+	1.1) inserire opportunamente una variabile 'int' che esprima il numero di pagine della nostra UnitaDidattica
+	1.2) aggiungere il nome della nostra nuova UnitaDidattica nel percorso 'materia+annoScolastico' opportuno
+2) Creare una nuova classe che estende Argomento, facendo override del metodo 'onCreateView', al cui interno:
+	2.1) richiamiamo il metodo 'settaggioViewLayoutTitoliPaginaClassica' (in caso di pagina NON di esercizi). Dei 4 argomenti passati:
+		2.1.1) i primi 2 sono standard: inflater, container
+		2.1.2) gli altri due sono il testo del titolo e il testo del paragrafo (es: 'Le Frazioni', 'Capitolo 1')
+3) Creare una nuova classe che estende PaginatoreGenerico, al cui interno dobbiamo:
+	3.1) creare un costruttore che richiami il costruttore 'super' con i 4 argomenti richiesti
+	3.2) fare override del metodo 'getItem' dove facciamo uno switch sul parametro intero 'i' in input e, per ogni case, 
+		 facciamo return di una nuova classe che estende Argomento. Il numero dei case DEVE essere uguale al numero di pagine pensate
+		 (e quindi uguale al numero di classi estendenti Argomento, oltre che al numero opportunamente settato nella classe Const)
+		 
+4) Creare nuova classe che estende UnitaDidattica, facendo override del metodo astratto 'setPaginatoreSpecifico'. All'interno di tale metodo:
+	4.1) dobbiamo scegliere se avere una pagina conclusiva con esercizi o meno, settando la variabile booleana 'unitaDidatticaConEserciziFinali'
+	4.2) dobbiamo settare il tabAdapter passando come argomento del metodo un 'new' PaginatoreUnitaDidattica (es: PaginatoreSomma). Il costruttore di un Paginatore prevede 4 argomenti:
+		4.2.1) i primi 3 sono standard: getSupportFragmentManager(), getApplicationContext(), findViewById(R.layout.viewpager_layout)
+		4.2.2) il quarto argomento è il numero di pagine che avrà la nostra UnitaDidattica, ovvero la variabile 'int' opportunamente settata nella classe Const
+5) Su AndroidManifest.xml aggiornare l'elenco delle Activity inserendo il nodo relativo alla nuova UnitaDidattica aggiunta
+		
+Fatto questo ci ritroveremo la nostra nuova unita didattica nella listView,
+corrispondente alla combinazione 'materia+annoScolastico' che abbiamo scelto nella classe Const.
+A questo punto possiamo utilizzare i vari metodi di inserimento testo all'interno delle nostre classi estendenti Argomento.
+
+
+
+url con elenco simboli matematici (usare la seconda colonna):
+https://www.w3schools.com/charsets/ref_utf_math.asp

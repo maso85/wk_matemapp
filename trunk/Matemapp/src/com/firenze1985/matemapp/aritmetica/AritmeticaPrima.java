@@ -3,23 +3,8 @@
  */
 package com.firenze1985.matemapp.aritmetica;
 
-import java.util.ArrayList;
-
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-
 import com.firenze1985.matemapp.AnnoScolastico;
-import com.firenze1985.matemapp.Const;
-import com.firenze1985.matemapp.MenuPrincipale;
-import com.firenze1985.matemapp.R;
-
-import packageActivity.BaseActivity;
-import packageActivity.GenericActivity;
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Administrator

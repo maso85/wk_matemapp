@@ -3,17 +3,13 @@
  */
 package com.firenze1985.matemapp;
 
-import com.firenze1985.matemapp.aritmetica.AritmeticaPrima;
-import com.firenze1985.matemapp.aritmetica.Frazioni;
-import com.firenze1985.matemapp.aritmetica.Somma;
-
+import packageActivity.GenericActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import packageActivity.BaseActivity;
-import packageActivity.GenericActivity;
 
 /**
  * @author Administrator

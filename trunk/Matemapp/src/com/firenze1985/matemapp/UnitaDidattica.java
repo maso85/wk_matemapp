@@ -3,14 +3,14 @@
  */
 package com.firenze1985.matemapp;
 
+import com.firenze1985.matemapp.paginatori.PaginatoreGenerico;
+
+import packageActivity.MyFragmentActivity;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-
-import com.firenze1985.matemapp.aritmetica.somma.PaginatoreSomma;
-
-import packageActivity.MyFragmentActivity;
+import android.view.WindowManager;
 
 /**
  * @author Administrator
@@ -33,6 +33,7 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	}
 	/* ************************************************************************************************************/
 
@@ -40,7 +41,8 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
 	ViewPager Tab;
     PaginatoreGenerico TabAdapter;
 	ActionBar myActionBar;
-
+	boolean unitaDidatticaConEserciziFinali;
+	
     @SuppressWarnings("deprecation")
 	@Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,7 +95,8 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
 			//Add New Tab
 			for (int i = 0; i < TabAdapter.getCount(); i++) {
 				int numeroPagina = i + 1;
-				if (i == TabAdapter.getCount() - 1) {
+				// se la unita didattica NON contiene esercizi finali, anche l'ultima pagina e' una pagina classica e viene titolata in modo standard
+				if (unitaDidatticaConEserciziFinali && i == TabAdapter.getCount() - 1) {
 					myActionBar.addTab(myActionBar.newTab().setText("esercizi").setTabListener(tabListener));	
 				} else {
 					myActionBar.addTab(myActionBar.newTab().setText("pagina "+numeroPagina).setTabListener(tabListener));
@@ -102,6 +105,7 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
     }
     
     public abstract void setPaginatoreSpecifico();
+
 
 	/**
 	 * @return the tab
@@ -130,18 +134,33 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
 	public void setTabAdapter(PaginatoreGenerico tabAdapter) {
 		TabAdapter = tabAdapter;
 	}
+	
+	/**
+	 * @return the unitaDidatticaConEserciziFinali
+	 */
+	public boolean isUnitaDidatticaConEserciziFinali() {
+		return unitaDidatticaConEserciziFinali;
+	}
+
+	/**
+	 * @param unitaDidatticaConEserciziFinali the unitaDidatticaConEserciziFinali to set
+	 */
+	public void setUnitaDidatticaConEserciziFinali(
+			boolean unitaDidatticaConEserciziFinali) {
+		this.unitaDidatticaConEserciziFinali = unitaDidatticaConEserciziFinali;
+	}
 
 	/**
 	 * @return the actionBar
 	 */
-	public ActionBar getMyActionBarctionBar() {
+	public ActionBar getMyActionBar() {
 		return myActionBar;
 	}
 
 	/**
 	 * @param actionBar the actionBar to set
 	 */
-	public void setMyActionBarctionBar(ActionBar myActionBar) {
+	public void setMyActionBar(ActionBar myActionBar) {
 		this.myActionBar = myActionBar;
 	}
 

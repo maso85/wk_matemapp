@@ -1,14 +1,14 @@
 /**
  * 
  */
-package com.firenze1985.matemapp.aritmetica.somma;
+package com.firenze1985.matemapp.paginatori;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 
-import com.firenze1985.matemapp.PaginatoreGenerico;
+import com.firenze1985.matemapp.aritmetica.somma.SommaCap1;
 
 /**
  * @author Administrator
@@ -17,6 +17,12 @@ import com.firenze1985.matemapp.PaginatoreGenerico;
 public class PaginatoreSomma extends PaginatoreGenerico {
 
 	
+	public PaginatoreSomma(FragmentManager fm, Context contesto,
+			View layoutDiPagina, int numPagine) {
+		super(fm, contesto, layoutDiPagina, numPagine);
+		// TODO Auto-generated constructor stub
+	}
+
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.FragmentStatePagerAdapter#getItem(int)
 	 */
@@ -45,25 +51,4 @@ public class PaginatoreSomma extends PaginatoreGenerico {
 
 	}
 
-
-	@Override
-	public int getCount() {
-		// TODO Auto-generated method stub
-		return 8;
-	}
-
-
-	
-	
-	public PaginatoreSomma(FragmentManager fm) {
-		super(fm);
-		// TODO Auto-generated constructor stub
-	}
-	
-	public PaginatoreSomma(FragmentManager fm, Context contesto, View layoutDiPagina) {
-		super(fm);
-		setContesto(contesto);
-		setLayoutDiPagina(layoutDiPagina);
-		// TODO Auto-generated constructor stub
-	}
 }

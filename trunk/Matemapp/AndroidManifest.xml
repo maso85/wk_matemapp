@@ -46,15 +46,20 @@
         </activity>
         <!-- ARITMETICA: argomenti -->      
         <activity
-            android:name="com.firenze1985.matemapp.aritmetica.Frazioni"
+            android:name="com.firenze1985.matemapp.aritmetica.unitadidattiche.Frazioni"
             android:noHistory="true"
             android:label="@string/label_aritmetica_frazioni">
         </activity>
         <activity
-            android:name="com.firenze1985.matemapp.aritmetica.Somma"
+            android:name="com.firenze1985.matemapp.aritmetica.unitadidattiche.Somma"
             android:noHistory="true"
             android:label="@string/label_aritmetica_somma">
         </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.unitadidattiche.Insiemi"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_insiemi">
+        </activity>        
         <!-- GEOMETRIA: principale e divisioni per anno -->
         <activity
             android:name="com.firenze1985.matemapp.geometria.GeometriaPrincipale"

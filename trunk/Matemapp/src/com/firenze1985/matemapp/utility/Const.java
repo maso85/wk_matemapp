@@ -1,10 +1,8 @@
 /**
  * 
  */
-package com.firenze1985.matemapp;
+package com.firenze1985.matemapp.utility;
 
-import java.util.LinkedHashMap;
-import java.util.List;
 
 /**
  * @author Administrator
@@ -21,12 +19,12 @@ public interface Const {
 
 	
 	/* ************************ PACKAGE CLASSI ***************************************************/
-	String PACKAGE_ARITMETICA_CLASSE_PRIMA = "com.firenze1985.matemapp.aritmetica.";
-	String PACKAGE_ARITMETICA_CLASSE_SECONDA = "com.firenze1985.matemapp.aritmetica.";
-	String PACKAGE_ARITMETICA_CLASSE_TERZA = "com.firenze1985.matemapp.aritmetica.";
-	String PACKAGE_GEOMETRIA_CLASSE_PRIMA = "com.firenze1985.matemapp.geometria.";
-	String PACKAGE_GEOMETRIA_CLASSE_SECONDA = "com.firenze1985.matemapp.geometria.";
-	String PACKAGE_GEOMETRIA_CLASSE_TERZA = "com.firenze1985.matemapp.geometria.";
+	String PACKAGE_ARITMETICA_CLASSE_PRIMA = "com.firenze1985.matemapp.aritmetica.unitadidattiche.";
+	String PACKAGE_ARITMETICA_CLASSE_SECONDA = "com.firenze1985.matemapp.aritmetica.unitadidattiche.";
+	String PACKAGE_ARITMETICA_CLASSE_TERZA = "com.firenze1985.matemapp.aritmetica.unitadidattiche.";
+	String PACKAGE_GEOMETRIA_CLASSE_PRIMA = "com.firenze1985.matemapp.geometria.unitadidattiche.";
+	String PACKAGE_GEOMETRIA_CLASSE_SECONDA = "com.firenze1985.matemapp.geometria.unitadidattiche.";
+	String PACKAGE_GEOMETRIA_CLASSE_TERZA = "com.firenze1985.matemapp.geometria.unitadidattiche.";
 	/* *******************************************************************************************/
 	
 	
@@ -46,6 +44,7 @@ public interface Const {
 	
 	/* ******************* ARRAY STRINGHE ARGOMENTI *****************************************************/
 	String[] ARGOMENTI_ARITMETICA_PRIMA = {
+			"Insiemi",
 			"Frazioni",
 			"Somma"
 	};
@@ -79,4 +78,10 @@ public interface Const {
 	};
 	/* ****************************************************************************************************/
 
+	
+	/* ************************************ NUMERO PAGINE PER ARGOMENTI *********************************************/
+	int NUMERO_PAGINE_FRAZIONI = 6;
+	int NUMERO_PAGINE_SOMMA = 8;
+	int NUMERO_PAGINE_INSIEMI = 10;
+	/* ***************************************************************************************************************/
 }
