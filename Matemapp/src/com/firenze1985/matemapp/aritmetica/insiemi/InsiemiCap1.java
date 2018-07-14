@@ -24,7 +24,7 @@ public class InsiemiCap1 extends Argomento {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		settaggioViewLayoutTitoliPaginaClassica(inflater, container, "Insiemi", "Capitolo 1: introduzione");
+		settaggioViewLayoutTitoliPaginaClassica(inflater, container, "Insiemi", "Capitolo 1: introduzione al concetto di insieme");
 		
 		inserisciTesto("Cosa è un insieme? Proviamo a darci un'idea");
 		inserisciTestoPersonalizzato("Possiamo immaginare a un insieme come a un raggruppamento di oggetti che hanno qualcosa in comune.",
@@ -58,7 +58,7 @@ public class InsiemiCap1 extends Argomento {
 		inserisciStacco();
 		inserisciTestoConParteInGrassetto("Come presto imparerai, in matematica siamo pigri. Non abbiamo molta voglia di scrivere. "
 				+ "Ecco che una volta capito un concetto, dobbiamo imparare alcuni simboli che ci permettono di accorciare le frasi.", 136,159);
-		inserisciTesto("Immagina di dover scrivere ad esempio: la Toscana appartiene all'insieme delle regioni italiane, la Puglia appartiene all'insieme delle regioni italiane, e così via. Non finiremmo più!");
+		inserisciTesto("Immaginiamo di dover scrivere ad esempio: la Toscana appartiene all'insieme delle regioni italiane, la Puglia appartiene all'insieme delle regioni italiane, e così via. Non finiremmo più!");
 		inserisciTesto("Dobbiamo inventarci qualcosa di furbo: ecco che ci vengono in aiuto una serie di convenzioni e simboli");
 		inserisciStacco();
 		inserisciTestoConParteInGrassetto("Innanzitutto gli insiemi si indicano solitamente con una lettera maiuscola dell'alfabeto: A, B, C,...", 57, 89);

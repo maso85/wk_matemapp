@@ -22,38 +22,64 @@ public class InsiemiCap2 extends Argomento {
 			Bundle savedInstanceState) {
 		settaggioViewLayoutTitoliPaginaClassica(inflater, container, "Insiemi", "Capitolo 2: rappresentazione degli insiemi");
 		
-		
-		/*
-		inserisciTesto("Cosa è un insieme? Proviamo a darci un'idea");
-		inserisciTestoPersonalizzato("Possiamo immaginare a un insieme come a un raggruppamento di oggetti che hanno qualcosa in comune.",
-				true, false, 43, 57, 
-				true, false, 79, 98, 
-				false, false, 0, 0);
-		inserisciTesto("Pensa ad esempio alla tua classe: puoi creare un insieme dei tuoi compagni che portano gli occhiali, oppure un insieme dei tuoi compagni che hanno le scarpe colorate, oppure ancora un insieme di tutti i maschi che scrivono con la mano sinistra");
-		inserisciTesto("Sono insiemi? Per quello che ci siamo detti poco fa sì. Ogni gruppo di oggetti (in questo caso persone) creato ha una caratteristica in comune");
-		inserisciTesto("Proviamo allora a dare una definizione un po' più rigorosa, usando alcuni termini specifici che siano comunque semplici e comprensibili:");
+		inserisciTesto("Abbiamo preso confidenza con alcune definizioni e simbologie legate agli insiemi. Impariamone subito un'altra:");
 		HashMap<Integer,Integer> mappaPartiInGrassetto = new HashMap<Integer, Integer>();
-		mappaPartiInGrassetto.put(3, 10);
-		mappaPartiInGrassetto.put(54, 68);
-		mappaPartiInGrassetto.put(110, 127);
-		inserisciDefinizione("Un insieme è una collezione di elementi che hanno una caratteristica in comune, in cui possiamo stabilire con assoluta certezza se un elemento appartiene o meno all'insieme", mappaPartiInGrassetto);
-		inserisciTestoConParteInCorsivo("Facciamo un attimo attenzione alla seconda parte della definizione, quella relativa alla assoluta certezza",
-				89, 107);
-		inserisciTesto("Che significa? Facciamo un esempio per capire meglio: supponi che il vostro insegnante chieda a ognuno di voi di creare l'insieme dei piatti preferiti.");
-		inserisciTesto("Cosa capiterà? Che tu, magari, avrai inserito alcuni piatti che alcuni tuoi compagni invece non hanno inserito perchè per il loro gusto non sono piacevoli. E viceversa, loro potranno aver inserito piatti che a te non piaccono per niente!");
-		inserisciTesto("Chi ha ragione? Tu? Loro?");
-		inserisciTesto("In realtà...nessuno! Questo perchè l'esercizio proposto contiene un errore di fondo: l'insieme dei piatti preferiti è soggettivo. Pertanto ognuno di noi creerà una lista differente dagli altri.");
-		inserisciTesto("Più tecnicamente, si dice che la caratteristica essere un piatto preferito è soggettiva. "
-				+ "Ovvero, ognuno di noi ha i suoi piatti preferiti, in base ai propri gusti. "
-				+ "Quindi questa caratteristica fa cambiare, da soggetto a soggetto (ecco perchè si dice soggettiva), "
-				+ "la costruzione della collezione di elementi");
-		inserisciTesto("Ecco che quindi non abbiamo creato un insieme.");
+		mappaPartiInGrassetto.put(2, 14);
+		mappaPartiInGrassetto.put(34, 55);
+		mappaPartiInGrassetto.put(103, 106);
+		inserisciDefinizione("La cardinalità di un insieme è il numero degli elementi di quell'insieme. La cardinalità si indica con |A| dove A è il nome dell'insieme", mappaPartiInGrassetto);
+		inserisciTesto("Per esempio: la cardinalità dell'insieme delle note musicali è 7. La cardinalità dell'insieme delle regioni italiane è 20.");
+		inserisciTestoConParteInGrassetto("Fintanto che riusciamo a contare tutti gli elementi di un insieme non abbiamo problemi.", 33, 38);
+		inserisciTestoConParteInGrassetto("Tali insiemi, si dice, hanno cardinalità finita.", 29, 47);
+		inserisciTesto("Invece la cardinalità dell'insieme dei numeri dispari?");
+		inserisciTesto("Di questo insieme non possiamo dare un numero esatto che possa indicare quanti elementi possiede: sono infiniti!");
+		inserisciTestoConParteInGrassetto("Tali insiemi, si dice, hanno cardinalità infinita", 29, 49);
+		inserisciTesto("Adesso pensa all'insieme degli abitanti di Marte: sapresti dirmi qual è la sua cardinalità? Non ha elementi, quindi la sua cardinalità è zero.");
+		inserisciTestoConParteInGrassetto("Se un insieme ha zero elementi, tale insieme si dice insieme vuoto", 53, 66);		
+		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
+		mappaPartiInGrassetto.put(41, 42);
+		mappaPartiInGrassetto.put(55, 58);
+		inserisciTestoConPiuPartiInGrassetto("L'insieme vuoto si indica con il simbolo \u2205, oppure con { }.", mappaPartiInGrassetto);		
 		inserisciStacco();
-		inserisciTesto("Se invece il tuo insegnante vi chiede di costruire l'insieme di tutte le regioni italiane...cosa succede?");
-		inserisciTesto("Stavolta tu e tutti i tuoi compagni avrete creato lo stesso insieme.");
-		inserisciTesto("Questo perchè la caratteristica essere o meno una regione italiana è oggettiva. Ovvero, ogni persona fornisce la stessa risposta");
-		*/
+		inserisciTestoConParteInGrassetto("Vediamo adesso alcuni modi di rappresentare gli insiemi.", 30, 43);
+		inserisciTesto("Ovvero come descrivere e raccontare agli altri, a tutti gli altri, di quale insieme stiamo parlando.");
+		inserisciStacco();
+		inserisciTesto("Supponiamo di dover rappresentare l'insieme delle note musicali.");
+		inserisciTesto("Un modo che potrebbe permettere a tutti di capire di quale insieme stiamo parlando potrebbe essere quello di scrivere tutti gli elementi che appartengono a quell'insieme. Nel nostro caso quindi potremmo scrivere come segue:");
+		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
+		mappaPartiInGrassetto.put(0, 0);
+		inserisciDefinizione("N={do, re, mi, fa, sol, la, si}", mappaPartiInGrassetto);
+		inserisciTestoConParteInGrassetto("Questo tipo di rappresentazione si chiama per elencazione.", 46, 57);
+		inserisciStacco();
+		inserisciTesto("Facciamo un nuovo esempio: rappresentiamo l'insieme di tutti i numeri pari");
+		inserisciTesto("Proviamo a farlo con la rappresentazione appena imparata?\nN={2, 4, 6, 8, 10, 12, 14, ...}\nAbbiamo un problema: quei puntini indicano che non abbiamo finito di elencare.");
+		inserisciTesto("Ma potremmo mai finire di elencare gli elementi di un insieme di questo tipo? No. Tale insieme infatti ha cardinalità infinita");
+		inserisciTesto("Per insiemi di questo tipo, pertanto, dobbiamo inventarci un modo alternativo di rappresentarli. Potremmo per esempio ciò che hanno in comune tutti gli elementi di tale insieme. L'idea è giusta, ecco come potremmo quindi rappresentare l'insieme dei numeri pari");
+		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
+		mappaPartiInGrassetto.put(0, 0);
+		inserisciDefinizione("N={x | x è un numero pari}", mappaPartiInGrassetto);
+		inserisciTesto("Che si legge:");
+		inserisciTestoInCorsivo("L'insieme N è dato da tutti gli elementi x tali che x è un numero pari");
+		inserisciTestoConParteInGrassetto("Questo tipo di rappresentazione si chiama per caratteristica.", 46, 60);
+		inserisciStacco();
+		inserisciTestoConParteInGrassetto("Infine esiste un terzo modo di rappresentare gli insiemi, che sicuramente avrai già visto negli anni scorsi: il diagramma di Eulero-Venn", 109, 136);
+		inserisciTesto("Questo tipo di rappresentazione è molto intuitiva: si disegna una linea chiusa (ricorda un sacchetto) e all'interno vi scriviamo gli elementi presenti. Una sorta di rappresentazione per caratteristica, però molto più grafica");
+		inserisciTestoConParteInCorsivo("Pur non essendo molto matematico come tipo di rappresentazione, risulta utile sopratutto perchè intuitivo. Sappi però che, più andrai avanti, e meno utilizzerai questa rappresentazione.", 22, 32);
+		inserisciStacco();
+		inserisciTestoConParteInGrassetto("Forse adesso ti starai chiedendo: come faccio a capire quale rappresentazione conviene?", 78, 86);
+		inserisciTesto("Non c'è una regola precisa, ma possiamo darti un'indicazione:");
+		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
+		mappaPartiInGrassetto.put(31, 37);
+		mappaPartiInGrassetto.put(77, 88);
+		mappaPartiInGrassetto.put(95, 109);
+		mappaPartiInGrassetto.put(229, 238);
+		mappaPartiInGrassetto.put(282, 297);
+		inserisciDefinizione("Per gli insiemi di cardinalità finita si può scegliere di rappresentarli per elencazione o per caratteristica. Ovviamente più è grande l'insieme e meno converrà la rappresentazione per elencazione.\n\n"
+				+ "Per gli insiemi di cardinalità infinita invece si consiglia la rappresentazione per caratteristica.", mappaPartiInGrassetto);
+		
+		inserisciStacco();
+		inserisciTestoConRiquadroConclusivo("- hai imparato la definizione di cardinalità di un insieme\n\n"
+				+ "- hai imparato come rappresentare gli insiemi");
 		return getAndroidView();
-
 	}
 }
