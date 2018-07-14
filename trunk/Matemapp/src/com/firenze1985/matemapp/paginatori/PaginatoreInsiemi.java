@@ -3,21 +3,15 @@
  */
 package com.firenze1985.matemapp.paginatori;
 
-import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap1;
-import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap2;
-import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap3;
-import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap4;
-import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap5;
-import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap6;
-import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap1;
-import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap2;
-import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap3;
-import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap4;
-
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
+
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap1;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap2;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap3;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap4;
 
 /**
  * @author Administrator

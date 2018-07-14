@@ -5,6 +5,7 @@ package com.firenze1985.matemapp;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.Locale;
 import java.util.Map;
 
 import android.graphics.Color;
@@ -14,6 +15,7 @@ import android.graphics.drawable.GradientDrawable;
 import android.support.v4.app.Fragment;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
+import android.text.style.StyleSpan;
 import android.text.style.UnderlineSpan;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -28,7 +30,7 @@ import android.widget.TextView;
  */
 public class Argomento extends Fragment {
 	
-	TextView textView;
+	protected TextView textView;
 	String titoloArgomento;
 	String titoloParagrafo;
 	View androidView;
@@ -135,7 +137,7 @@ public class Argomento extends Fragment {
 	/**
 	 * Metodo che (ri)crea ogni volta una nuova textView. Da richiamare ogni volta che si crea un metodo del tipo 
 	 */
-	private void inizializzaTextView() {
+	protected void inizializzaTextView() {
 		setTextView(new TextView(getContext()));
 	}
 	
@@ -389,6 +391,11 @@ public class Argomento extends Fragment {
         getLinear().addView(textView);
 	}
 	
+	/**
+	 * Metodo che restituisce un testo colorato, settato anche a bold
+	 * @param testo
+	 * @param colore
+	 */
 	protected void inserisciTestoColoratoInGrassetto(String testo, String colore) {
 		inizializzaTextView();
 		textView.setText(testo);
@@ -397,13 +404,15 @@ public class Argomento extends Fragment {
 		getLinear().addView(textView);
 	}
 	
-	
+	/**
+	 * Metodo che restituisce un testo con un riquadro, anteposto dalla parola <i>Conclusioni</i>
+	 */
 	protected void inserisciTestoConRiquadroConclusivo(String testo) {
 		inserisciTestoColoratoInGrassetto("Conclusioni", "#880000");
 		inizializzaTextView();
 		GradientDrawable gd = new GradientDrawable();
         gd.setColor(Color.parseColor("#FFFFFF")); // Changes this drawbale to use a single color instead of a gradient
-        gd.setStroke(2, Color.parseColor("#880000"));
+        gd.setStroke(3, Color.parseColor("#880000"));
 		textView.setPadding(4, 0, 4, 0);    
         textView.setBackground(gd);
         textView.setText(testo);
@@ -411,5 +420,39 @@ public class Argomento extends Fragment {
         getLinear().addView(textView);
 		
 	}
+	
+    protected static void preparaTesto(SpannableStringBuilder builder, String text, String textToBold, int tipologiaModifica){
+
+        if(textToBold.length() > 0 && !textToBold.trim().equals("")){
+        	
+            //for counting start/end indexes
+            String testText = text.toLowerCase(Locale.ITALY);
+            String testTextToBold = textToBold.toLowerCase(Locale.ITALY);
+            int startingIndex = testText.indexOf(testTextToBold);
+            int endingIndex = startingIndex + testTextToBold.length();
+            //for counting start/end indexes
+
+            if(startingIndex < 0 || endingIndex <0){
+                //
+            }
+            else if(startingIndex >= 0 && endingIndex >=0){
+                builder.setSpan(new StyleSpan(tipologiaModifica), startingIndex, endingIndex, 0);
+            }
+        }
+    }
+    
+    protected void inserisciTestoPersonalizzato(String testo, HashMap<String, Integer> mappaParolaModifica) {
+		inizializzaTextView();
+		Iterator i = mappaParolaModifica.entrySet().iterator();
+        SpannableStringBuilder builder = new SpannableStringBuilder();
+        builder.append(testo);
+		while (i.hasNext()) {
+	        Map.Entry mappa = (Map.Entry)i.next();
+	        preparaTesto(builder, testo,((String)mappa.getKey()), ((Integer)mappa.getValue()).intValue());
+		}
+        
+		textView.setText(builder);
+		getLinear().addView(textView);
+    }
 	
 }
