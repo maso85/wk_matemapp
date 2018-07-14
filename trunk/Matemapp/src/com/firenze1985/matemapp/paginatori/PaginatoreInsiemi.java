@@ -10,6 +10,9 @@ import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap4;
 import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap5;
 import com.firenze1985.matemapp.aritmetica.frazioni.FrazioniCap6;
 import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap1;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap2;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap3;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap4;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
@@ -37,11 +40,11 @@ public class PaginatoreInsiemi extends PaginatoreGenerico {
         case 0:
             return new InsiemiCap1();
         case 1:
-            return new InsiemiCap1();
+            return new InsiemiCap2();
         case 2:
-            return new InsiemiCap1();
+            return new InsiemiCap3();
 	    case 3:
-	        return new InsiemiCap1();
+	        return new InsiemiCap4();
 	    case 4:
 	        return new InsiemiCap1();
 	    case 5:
