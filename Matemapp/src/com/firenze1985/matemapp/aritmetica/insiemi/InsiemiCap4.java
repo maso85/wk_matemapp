@@ -5,13 +5,20 @@ package com.firenze1985.matemapp.aritmetica.insiemi;
 
 import java.util.HashMap;
 
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.text.SpannableStringBuilder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 
+
+
+
+
 import com.firenze1985.matemapp.Argomento;
+import com.firenze1985.matemapp.utility.MathSymbol;
 /**
  * @author Administrator
  *
@@ -35,7 +42,38 @@ public class InsiemiCap4 extends Argomento {
 		mappaPartiInGrassetto.put(124, 140);
 		mappaPartiInGrassetto.put(155, 164);
 		inserisciDefinizione("Dati due insiemi A e B, si definisce C intersezione tra A e B come l'insieme formato da tutti gli elementi che appartengono sia ad A che a B.\n\nIn simboli: C = A \u2229 B", mappaPartiInGrassetto);
+		inserisciTesto("Facciamo un altro esempio: prendiamo C come l'insieme dei carnivori ed E come l'insieme degli erbivori. Esistono elementi che appartengono a entrambi gli insiemi? Sì, sono gli onnivori. Se chiamiamo O tale insieme, allora scriveremo:\nO = C \u2229 B");
+		inserisciTesto("Prendiamo adesso l'insieme M dato dai libri di matematica e S l'insieme dei libri di storia. Esistono elementi appartenenti ad entrambi gli insiemi? Stavolta no. Come traduciamo in simboli che non ci sono elementi nell'insieme intersezione?");
+		inserisciTesto("M "+MathSymbol.INTERSEZIONE+" S = "+MathSymbol.INSIEME_VUOTO);
+		inserisciTestoConParteInGrassetto("Si dice allora che i due insiemi M e S sono disgiunti", 44, 53);
+		inserisciTestoConParteInGrassetto("Un'ultima indicazione su questa operazione: è vero che M "+MathSymbol.INTERSEZIONE+" S = S "+MathSymbol.INTERSEZIONE+" M ? Sì. Se un'operazione gode di questa proprietà (che rivedremo più nello specifico per le operazioni numeriche) di dice che gode della proprietà commutativa.", 214, 225);
+		inserisciStacco();
+		inserisciTesto("Adesso vediamo un'altra operazione. Prendiamo due insiemi:\nK={4, 8, 12}\nZ={2, 4, 6, 8}");
+		inserisciTesto("Immagina i due insiemi come due sacchetti che svuoti tutti all'interno di un terzo sacchetto. Cosa otterremo? Chiamiamo G tale insiem:");
+		inserisciTesto("G = {2, 4, 6, 8, 12}");
+		inserisciTesto("Se sei stato attento, dovresti aver notato che dentro G abbiamo inserito soltanto un 4. Non abbiamo sbagliato, è proprio una regola degli insiemi:");
+		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
+		mappaPartiInGrassetto.put(0, 0);
+		inserisciDefinizione("In ogni insieme, gli elementi al suo interno vanno scritti una volta sola", mappaPartiInGrassetto);
+		String testo1 = "Detto questo, torniamo al nostro insieme G: l'abbiamo ottenuto unendo i due insiemi/sacchetti di partenza. Ecco che quindi abbiamo creato una nuova operazione chiamata unione:";
+		HashMap<String, Integer> mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("unione", Typeface.BOLD);
+		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
+		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
+		mappaPartiInGrassetto.put(39, 45);
+		mappaPartiInGrassetto.put(193, 203);
+		inserisciDefinizione("Dati due insiemi A e B, si definisce D unione tra A e B come l'insieme formato dagli elementi appartenenti ad A o a B, eventualmente elencando una volta sola gli elementi ripetuti.\n\nIn simboli: D = A "+MathSymbol.UNIONE+" B", mappaPartiInGrassetto);
 		
+		// 2018_07_14 : utilizzo nuovo metodo per personalizzare il testo
+		/*
+		String testoProva = "Prova cazzo tette culo "+MathSymbol.INTERSEZIONE+" vagina";
+		HashMap<String, Integer> mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("cazzo", Typeface.BOLD);
+		mappaParolaModifica.put(MathSymbol.INSIEME_VUOTO, Typeface.BOLD_ITALIC);
+		mappaParolaModifica.put("vagina", Typeface.ITALIC);
+		inserisciTestoPersonalizzato(testoProva, mappaParolaModifica);
+		*/
+		//
 		inserisciStacco();
 		inserisciTestoConRiquadroConclusivo("- hai imparato la definizione di sottoinsieme\n\n"
 				+ "- hai imparato la differenza tra sottoinsieme proprio e improprio");

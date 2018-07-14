@@ -54,7 +54,7 @@ public class InsiemiCap2 extends Argomento {
 		inserisciTesto("Facciamo un nuovo esempio: rappresentiamo l'insieme di tutti i numeri pari");
 		inserisciTesto("Proviamo a farlo con la rappresentazione appena imparata?\nN={2, 4, 6, 8, 10, 12, 14, ...}\nAbbiamo un problema: quei puntini indicano che non abbiamo finito di elencare.");
 		inserisciTesto("Ma potremmo mai finire di elencare gli elementi di un insieme di questo tipo? No. Tale insieme infatti ha cardinalità infinita");
-		inserisciTesto("Per insiemi di questo tipo, pertanto, dobbiamo inventarci un modo alternativo di rappresentarli. Potremmo per esempio ciò che hanno in comune tutti gli elementi di tale insieme. L'idea è giusta, ecco come potremmo quindi rappresentare l'insieme dei numeri pari");
+		inserisciTesto("Per insiemi di questo tipo, pertanto, dobbiamo inventarci un modo alternativo di rappresentarli. Potremmo per esempio ciò che hanno in comune tutti gli elementi di tale insieme. L'idea è giusta, ecco come potremmo quindi rappresentare l'insieme dei numeri pari:");
 		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
 		mappaPartiInGrassetto.put(0, 0);
 		inserisciDefinizione("N={x | x è un numero pari}", mappaPartiInGrassetto);

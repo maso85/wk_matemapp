@@ -36,8 +36,9 @@ public class InsiemiCap3 extends Argomento {
 		inserisciTesto("La risposta è sì ad entrambe le domande. Ma sono due casi limite, che dobbiamo puntualizzare.");
 		mappaPartiInGrassetto = new HashMap<Integer, Integer>();
 		mappaPartiInGrassetto.put(21, 43);
-		mappaPartiInGrassetto.put(122, 142);
-		inserisciDefinizione("Un insieme B si dice sottoinsieme improprio di A se B è l'insieme vuoto oppure se B coincide con A.\n\nUn insieme D si dice sottoinsieme proprio di C se ogni elemento di D appartiene anche a C e se esiste almeno un elemento di C che non appartiene a D.", mappaPartiInGrassetto);
+		mappaPartiInGrassetto.put(113, 118);
+		mappaPartiInGrassetto.put(141, 161);
+		inserisciDefinizione("Un insieme B si dice sottoinsieme improprio di A se B è l'insieme vuoto oppure se B coincide con A.\n\nIn simboli: B \u2286 A\n\nUn insieme D si dice sottoinsieme proprio di C se ogni elemento di D appartiene anche a C e se esiste almeno un elemento di C che non appartiene a D.", mappaPartiInGrassetto);
 		inserisciTesto("Ad esempio: l'insieme V delle vocali è un sottoinsieme proprio dell'insieme L delle lettere dell'alfabeto: infatti ogni elemento di V appartiene a L, ma esiste almeno un elemento (pensa a una qualunque consonante) di L che non appartiene a V. L'insieme fatto dalle tue braccia e le tue gambe è un sottoinsieme improprio dell'insieme dei tuoi arti: infatti i due insiemi coincidono.");		
 		inserisciStacco();
 		inserisciTestoConRiquadroConclusivo("- hai imparato la definizione di sottoinsieme\n\n"
