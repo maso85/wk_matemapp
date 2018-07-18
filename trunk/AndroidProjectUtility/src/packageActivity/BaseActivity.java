@@ -3,6 +3,10 @@
  */
 package packageActivity;
 
+import android.app.ActionBar;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+
 
 /**
  * Classe primitiva di Activity, da cui estendere la <b>MainActivity</b> e la <b>GenericActivity</b>
@@ -27,5 +31,14 @@ public abstract class BaseActivity extends android.app.Activity {
 	public abstract void setCurrentActivity(BaseActivity currentActivity);
 	
 	/* ****************************************************************************************** */
+	
+	/* ************************ METODI ****************************/
+	
+	public void setColorActionBar(String colore) {
+		ActionBar bar = getActionBar();
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor(colore)));		
+	}
+	
+	/* ************************************************************/
 	
 }
