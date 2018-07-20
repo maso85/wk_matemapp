@@ -44,6 +44,7 @@ public abstract class AnnoScolastico extends GenericActivity {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		setColorActionBar(Const.ACTION_BAR);
 		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setAttributi();
 	}

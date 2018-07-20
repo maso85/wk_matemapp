@@ -14,6 +14,7 @@ import android.widget.Button;
 
 import com.firenze1985.matemapp.aritmetica.AritmeticaPrincipale;
 import com.firenze1985.matemapp.geometria.GeometriaPrincipale;
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Daniele
@@ -41,7 +42,8 @@ public class MenuPrincipale extends MainActivity {
 	public void setSuperParameter() {
 		setIntMenuPrincipale(R.menu.menu_principale);
 		setIntVersioneApp(R.id.versione_app);
-		setCurrentActivity(this);
+		setColorActionBar(Const.ACTION_BAR);
+		setCurrentActivity(this);		
 		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	}
 	/* ************************************************************************************** */

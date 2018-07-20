@@ -12,6 +12,7 @@ import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap1;
 import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap2;
 import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap3;
 import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap4;
+import com.firenze1985.matemapp.aritmetica.insiemi.InsiemiCap5;
 
 /**
  * @author Administrator
@@ -40,17 +41,7 @@ public class PaginatoreInsiemi extends PaginatoreGenerico {
 	    case 3:
 	        return new InsiemiCap4();
 	    case 4:
-	        return new InsiemiCap1();
-	    case 5:
-	        return new InsiemiCap1();
-	    case 6:
-            return new InsiemiCap1();
-        case 7:
-            return new InsiemiCap1();
-        case 8:
-            return new InsiemiCap1();
-	    case 9:
-	        return new InsiemiCap1();	    
+	        return new InsiemiCap5();	    
 	    }
 		return null;
 

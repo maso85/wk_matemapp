@@ -7,6 +7,7 @@ import packageActivity.BaseActivity;
 
 import com.firenze1985.matemapp.Materia;
 import com.firenze1985.matemapp.MenuPrincipale;
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Administrator
@@ -29,6 +30,7 @@ public class GeometriaPrincipale extends Materia {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		setColorActionBar(Const.ACTION_BAR);
 		setClassePrima(GeometriaPrima.class);
 		setClasseSeconda(GeometriaSeconda.class);
 		setClasseTerza(GeometriaTerza.class);

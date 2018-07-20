@@ -19,7 +19,7 @@ public class Insiemi extends UnitaDidattica {
 	 */
 	@Override
 	public void setPaginatoreSpecifico() {
-		setUnitaDidatticaConEserciziFinali(false);
+		setUnitaDidatticaConEserciziFinali(true);
 		
 		setTabAdapter(new PaginatoreInsiemi(getSupportFragmentManager(), getApplicationContext(), findViewById(R.layout.viewpager_layout), Const.NUMERO_PAGINE_INSIEMI));
 	}
