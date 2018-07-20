@@ -35,11 +35,15 @@ public final class R {
         public static final int background_button_pressed=0x7f020009;
         public static final int background_button_salva=0x7f02000a;
         public static final int ic_launcher=0x7f02000b;
-        public static final int ic_launcher_2=0x7f02000c;
-        public static final int ic_launcher_magic=0x7f02000d;
-        public static final int logo_conv1126_formato72x72=0x7f02000e;
+        public static final int simboli_grandi=0x7f02000c;
     }
     public static final class id {
+        public static final int MENU_1=0x7f080011;
+        public static final int MENU_2=0x7f080012;
+        public static final int MENU_3=0x7f080013;
+        public static final int MENU_4=0x7f080014;
+        public static final int MENU_5=0x7f080015;
+        public static final int MENU_6=0x7f080016;
         public static final int arrow=0x7f080008;
         public static final int idBottoneAritmetica=0x7f08000d;
         public static final int idBottoneClassePrima=0x7f080009;
@@ -73,7 +77,8 @@ public final class R {
         public static final int viewpager_layout=0x7f03000b;
     }
     public static final class menu {
-        public static final int menu_principale=0x7f070000;
+        public static final int menu_matemapp=0x7f070000;
+        public static final int menu_principale=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f05003e;
