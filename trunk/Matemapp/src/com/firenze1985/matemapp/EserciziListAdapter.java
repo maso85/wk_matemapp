@@ -6,11 +6,13 @@ import java.util.HashMap;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseExpandableListAdapter;
+import android.widget.LinearLayout;
 import android.widget.TextView;
  
 public class EserciziListAdapter extends BaseExpandableListAdapter {
@@ -53,9 +55,26 @@ public class EserciziListAdapter extends BaseExpandableListAdapter {
 
 		TextView txtListChild = (TextView) convertView
 				.findViewById(R.id.laptop);
+		if ((childPosition % 2) == 0)
+		{
+			txtListChild.setBackgroundColor(Color.parseColor("#CCCCDD"));
+		}
+		else
+		{
+			txtListChild.setBackgroundColor(Color.parseColor("#DDCCCC"));
+		}		
+		HashMap<String, Integer> mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("Esercizio 1:", Typeface.BOLD);
+		mappaParolaModifica.put("Esercizio 2:", Typeface.BOLD);
+		mappaParolaModifica.put("Esercizio 3:", Typeface.BOLD);
+		mappaParolaModifica.put("Esercizio 4:", Typeface.BOLD);
+		mappaParolaModifica.put("Esercizio 5:", Typeface.BOLD);
+		mappaParolaModifica.put("Esercizio 6:", Typeface.BOLD);
+		mappaParolaModifica.put("Esercizio 7:", Typeface.BOLD);
+		mappaParolaModifica.put("Compito 1:", Typeface.BOLD);
+		mappaParolaModifica.put("Compito 2:", Typeface.BOLD);
 
-		txtListChild.setText(childText);
-
+		ModificaTesto.inserisciTestoPersonalizzato(null, txtListChild, childText, mappaParolaModifica);
 		return convertView;
 	}
 

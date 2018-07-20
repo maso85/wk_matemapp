@@ -8,6 +8,7 @@ import android.view.WindowManager;
 
 import com.firenze1985.matemapp.Materia;
 import com.firenze1985.matemapp.MenuPrincipale;
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Administrator
@@ -30,16 +31,12 @@ public class AritmeticaPrincipale extends Materia {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		setColorActionBar(Const.ACTION_BAR);
 		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 		setClassePrima(AritmeticaPrima.class);
 		setClasseSeconda(AritmeticaSeconda.class);
 		setClasseTerza(AritmeticaTerza.class);
 	}
 	/* ************************************************************************************************************/
-		
-	
-	
-
-	
 
 }

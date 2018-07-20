@@ -45,7 +45,7 @@ public class InsiemiCap4 extends Argomento {
 		inserisciTesto("Facciamo un altro esempio: prendiamo C come l'insieme dei carnivori ed E come l'insieme degli erbivori. Esistono elementi che appartengono a entrambi gli insiemi? Sì, sono gli onnivori. Se chiamiamo O tale insieme, allora scriveremo:\nO = C \u2229 B");
 		inserisciTesto("Prendiamo adesso l'insieme M dato dai libri di matematica e S l'insieme dei libri di storia. Esistono elementi appartenenti ad entrambi gli insiemi? Stavolta no. Come traduciamo in simboli che non ci sono elementi nell'insieme intersezione?");
 		inserisciTesto("M "+MathSymbol.INTERSEZIONE+" S = "+MathSymbol.INSIEME_VUOTO);
-		inserisciTestoConParteInGrassetto("Si dice allora che i due insiemi M e S sono disgiunti", 44, 53);
+		inserisciTestoConParteInGrassetto("Si dice allora che i due insiemi M e S sono disgiunti.", 44, 53);
 		inserisciTestoConParteInGrassetto("Un'ultima indicazione su questa operazione: è vero che M "+MathSymbol.INTERSEZIONE+" S = S "+MathSymbol.INTERSEZIONE+" M ? Sì. Se un'operazione gode di questa proprietà (che rivedremo più nello specifico per le operazioni numeriche) di dice che gode della proprietà commutativa.", 214, 225);
 		inserisciStacco();
 		inserisciTesto("Adesso vediamo un'altra operazione. Prendiamo due insiemi:\nK={4, 8, 12}\nZ={2, 4, 6, 8}");
@@ -63,7 +63,23 @@ public class InsiemiCap4 extends Argomento {
 		mappaPartiInGrassetto.put(39, 45);
 		mappaPartiInGrassetto.put(193, 203);
 		inserisciDefinizione("Dati due insiemi A e B, si definisce D unione tra A e B come l'insieme formato dagli elementi appartenenti ad A o a B, eventualmente elencando una volta sola gli elementi ripetuti.\n\nIn simboli: D = A "+MathSymbol.UNIONE+" B", mappaPartiInGrassetto);
-		
+		inserisciTesto("Se prendiamo N={2, 3, 4, 5) e F={3, 4, 5, 6} allora se chiamiamo K l'unione tra i due insiemi possiamo scrivere che:\nK = N "+MathSymbol.UNIONE+" F = {2, 3, 4, 5, 6}");
+		inserisciTesto("Se invece abbiamo C={2, 3, 4} e W={2, 3, 4, 5, 11} e chiamiamo P l'unione tra i due insiemi, come è fatto P?\nP = C "+MathSymbol.UNIONE+" W = {2, 3, 4, 5, 11}");
+		testo1 = "In questo caso è accaduto questo: dato che C è sottoinsieme di W (ossia è incluso in W) allora l'unione tra i due insiemi è semplicemente l'insieme più grande, ossia in questo caso W.";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("sottoinsieme", Typeface.BOLD);
+		mappaParolaModifica.put("incluso", Typeface.BOLD);
+		inserisciTestoPersonalizzato(testo1,mappaParolaModifica);
+		inserisciStacco();
+		testo1 = "Così come abbiamo visto per l'intersezione, anche l'unione gode della proprietà commutativa. Stavolta, rifacendoci al concetto di mettere due sacchetti in un unico sacchetto, capiamo ancora meglio come sia effettivamente vero che questa operazione gode della proprietà commutativa.";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("unione", Typeface.BOLD);
+		mappaParolaModifica.put("commutativa", Typeface.BOLD);
+		mappaParolaModifica.put("unione", Typeface.BOLD);
+		mappaParolaModifica.put("mettere due sacchetti in un unico sacchetto", Typeface.ITALIC);
+		inserisciTestoPersonalizzato(testo1,mappaParolaModifica);
+		inserisciStacco();
+		inserisciTestoColoratoInGrassetto("Siamo arrivati alla fine di questa unità: prosegui alla pagina successiva per svolgere gli esercizi!", "#009900");
 		// 2018_07_14 : utilizzo nuovo metodo per personalizzare il testo
 		/*
 		String testoProva = "Prova cazzo tette culo "+MathSymbol.INTERSEZIONE+" vagina";

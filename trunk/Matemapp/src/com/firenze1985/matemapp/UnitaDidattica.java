@@ -4,10 +4,13 @@
 package com.firenze1985.matemapp;
 
 import com.firenze1985.matemapp.paginatori.PaginatoreGenerico;
+import com.firenze1985.matemapp.utility.Const;
 
 import packageActivity.MyFragmentActivity;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.WindowManager;
@@ -33,6 +36,8 @@ public abstract class UnitaDidattica extends MyFragmentActivity {
 	public void setSuperParameter() {
 		setMainActivity(MenuPrincipale.class);
 		setCurrentActivity(this);
+		ActionBar bar = getActionBar();
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor(Const.ACTION_BAR)));		
 		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
 	}
 	/* ************************************************************************************************************/

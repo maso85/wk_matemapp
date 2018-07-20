@@ -9,6 +9,10 @@ package com.firenze1985.matemapp.utility;
  *
  */
 public interface Const {
+	/* ******************************** COSTANTI PER LAYOUT *********************************/
+	String ACTION_BAR = "#777777";
+	/* **************************************************************************************/
+	
 	/* ********************** MATERIE E ANNI SCOLASTICI *********************/
 	String ARITMETICA = "Aritmetica";
 	String GEOMETRIA = "Geometria";
@@ -82,6 +86,6 @@ public interface Const {
 	/* ************************************ NUMERO PAGINE PER ARGOMENTI *********************************************/
 	int NUMERO_PAGINE_FRAZIONI = 6;
 	int NUMERO_PAGINE_SOMMA = 8;
-	int NUMERO_PAGINE_INSIEMI = 10;
+	int NUMERO_PAGINE_INSIEMI = 5;
 	/* ***************************************************************************************************************/
 }
