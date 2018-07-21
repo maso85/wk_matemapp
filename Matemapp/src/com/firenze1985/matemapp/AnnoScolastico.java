@@ -5,17 +5,16 @@ package com.firenze1985.matemapp;
 
 import java.util.ArrayList;
 
-import com.firenze1985.matemapp.utility.Const;
-
 import packageActivity.BaseActivity;
 import packageActivity.GenericActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.WindowManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Administrator
@@ -63,10 +62,10 @@ public abstract class AnnoScolastico extends GenericActivity {
 		/* ***********creazione lista scrollabile con elenco di unita didattiche  ********/
 		// definisco un ArrayList  
         final ArrayList <String> listp = new ArrayList<String>();  
-        String[] arrayRecuperato = recuperoArrayPerPaginatore(getMateria(), getAnnoScolastico());
+        String[] arrayRecuperatoListaVideo = recuperoArrayPerPaginatore(getMateria(), getAnnoScolastico(), 1);
         
-        for (int i = 0; i < arrayRecuperato.length; ++i) {  
-             listp.add(arrayRecuperato[i]);  
+        for (int i = 0; i < arrayRecuperatoListaVideo.length; ++i) {  
+             listp.add(arrayRecuperatoListaVideo[i]);  
         }  
 		// recupero la lista dal layout  
         final ListView listaArgomenti = (ListView) findViewById(R.id.idListaUnitaDidattica);  
@@ -83,11 +82,11 @@ public abstract class AnnoScolastico extends GenericActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				int esimaUnitaDidattica = position;
-				String stringUnitaDidattica = (String) listaArgomenti.getItemAtPosition(esimaUnitaDidattica);
+		        String[] arrayRecuperatoClassName = recuperoArrayPerPaginatore(getMateria(), getAnnoScolastico(), 0);
 				// si lancia la activity corrispondente alla unita didattica selezionata
 				Class activityClass = null;
 				try {
-					activityClass = Class.forName(getPackageClasse()+stringUnitaDidattica);
+					activityClass = Class.forName(getPackageClasse()+arrayRecuperatoClassName[esimaUnitaDidattica]);
 				} catch (ClassNotFoundException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -105,7 +104,7 @@ public abstract class AnnoScolastico extends GenericActivity {
 	public abstract void setAttributi();
 
 	
-	public String[] recuperoArrayPerPaginatore(String materia, String annoScolastico) {
+	public String[] recuperoArrayPerPaginatore(String materia, String annoScolastico, int tipoArray) {
 		String[] array = null;
 		String materiaRecuperata = "";
 		String annoScolasticoRecuperato = "";
@@ -128,19 +127,19 @@ public abstract class AnnoScolastico extends GenericActivity {
 		// recupero il corretto array di stringhe
 		if (materiaRecuperata == Const.ARITMETICA) {
 			if (annoScolasticoRecuperato == Const.CLASSE_PRIMA) {
-				array = Const.ARGOMENTI_ARITMETICA_PRIMA;
+				array = Const.ARGOMENTI_ARITMETICA_PRIMA[tipoArray];
 			} else if (annoScolasticoRecuperato == Const.CLASSE_SECONDA) {
-				array = Const.ARGOMENTI_ARITMETICA_SECONDA;
+				array = Const.ARGOMENTI_ARITMETICA_SECONDA[tipoArray];
 			} else if (annoScolasticoRecuperato == Const.CLASSE_TERZA) {
-				array = Const.ARGOMENTI_ARITMETICA_TERZA;
+				array = Const.ARGOMENTI_ARITMETICA_TERZA[tipoArray];
 			}
 		} else if (materiaRecuperata == Const.GEOMETRIA) {
 			if (annoScolasticoRecuperato == Const.CLASSE_PRIMA) {
-				array = Const.ARGOMENTI_GEOMETRIA_PRIMA;
+				array = Const.ARGOMENTI_GEOMETRIA_PRIMA[tipoArray];
 			} else if (annoScolasticoRecuperato == Const.CLASSE_SECONDA) {
-				array = Const.ARGOMENTI_GEOMETRIA_SECONDA;
+				array = Const.ARGOMENTI_GEOMETRIA_SECONDA[tipoArray];
 			} else if (annoScolasticoRecuperato == Const.CLASSE_TERZA) {
-				array = Const.ARGOMENTI_GEOMETRIA_TERZA;
+				array = Const.ARGOMENTI_GEOMETRIA_TERZA[tipoArray];
 			}
 		}
 		return array;

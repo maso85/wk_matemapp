@@ -343,7 +343,7 @@ public class Argomento extends Fragment {
 	 * Metodo che restituisce un testo in <i>formato definizione</i> ossia con un background colore differente.
 	 * @param testo
 	 */
-	protected void inserisciDefinizione(String testo, HashMap mappaPartiInGrassetto) {
+	protected void inserisciDefinizione(String testo, HashMap<Integer,Integer> mappaPartiInGrassetto) {
 		Iterator i = mappaPartiInGrassetto.entrySet().iterator();
 		SpannableStringBuilder str = new SpannableStringBuilder(testo);
 		while (i.hasNext()) {
@@ -454,5 +454,25 @@ public class Argomento extends Fragment {
 		textView.setText(builder);
 		getLinear().addView(textView);
     }
+    
+	/**
+	 * Metodo che restituisce un testo in <i>formato definizione</i> ossia con un background colore differente.
+	 * @param testo
+	 */
+	protected void inserisciDefinizioneNuovoModo(String testo, HashMap<String,Integer> mappaPartiInGrassetto) {
+		Iterator i = mappaPartiInGrassetto.entrySet().iterator();
+		SpannableStringBuilder str = new SpannableStringBuilder(testo);
+		while (i.hasNext()) {
+	        Map.Entry mappa = (Map.Entry)i.next();
+	        preparaTesto(str, testo,((String)mappa.getKey()), ((Integer)mappa.getValue()).intValue());
+		}
+		inserisciStacco();
+		inizializzaTextView();
+		textView.setPadding(4, 0, 4, 0);    
+		textView.setText(str);
+		textView.setBackgroundColor(Color.parseColor(BACKGROUND_DEFINIZIONE));
+		getLinear().addView(textView);
+		inserisciStacco();
+	}
 	
 }

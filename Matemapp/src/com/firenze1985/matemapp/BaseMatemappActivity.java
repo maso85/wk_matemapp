@@ -3,7 +3,6 @@
  */
 package com.firenze1985.matemapp;
 
-import packageActivity.BaseActivity;
 import packageActivity.GenericActivity;
 
 /**

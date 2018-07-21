@@ -3,6 +3,8 @@
  */
 package com.firenze1985.matemapp.utility;
 
+import java.util.HashMap;
+
 
 /**
  * @author Administrator
@@ -44,48 +46,102 @@ public interface Const {
 		CLASSE_TERZA
 	};
 	/* *************************************************************************************/
-	
-	
-	/* ******************* ARRAY STRINGHE ARGOMENTI *****************************************************/
-	String[] ARGOMENTI_ARITMETICA_PRIMA = {
+
+
+	/* ********************************************************* HASHMAP CLASSNAME - NOME ARGOMENTO ********************************/
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_CLASSNAME = {
 			"Insiemi",
-			"Frazioni",
-			"Somma"
+			"NumNaturali",
+			"Somma",
+			"Frazioni"
+	};	
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_LISTAVIDEO = {
+			"Insiemi",
+			"Numeri Naturali",
+			"Somma",
+			"Frazioni"
 	};
-	String[] ARGOMENTI_ARITMETICA_SECONDA = {
+	/**********************/
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_CLASSNAME = {
+			"Radici",
+			"Proporzioni"
+	};	
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_LISTAVIDEO = {
 			"Radici",
 			"Proporzioni"
 	};
-	String[] ARGOMENTI_ARITMETICA_TERZA = {
-			"Numeri relativi",
+	/*********************/
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_TERZA_CLASSNAME = {
+			"NumRelativi",
+			"Algebra"
+	};	
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_TERZA_LISTAVIDEO = {
+			"Numeri Relativi",
 			"Algebra"
 	};
-	String[] ARGOMENTI_GEOMETRIA_PRIMA = {
+	/**********************/
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_CLASSNAME = {
+			"Segmenti",
+			"Triangoli"
+	};	
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_LISTAVIDEO = {
 			"Segmenti",
 			"Triangoli"
 	};
-	String[] ARGOMENTI_GEOMETRIA_SECONDA = {
+	/*************************/
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_CLASSNAME = {
+			"TeoPitagora",
+			"Similitudini"
+	};	
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_LISTAVIDEO = {
 			"Teorema di Pitagora",
 			"Similitudini"
 	};
-	String[] ARGOMENTI_GEOMETRIA_TERZA = {
+	/*************************/
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_CLASSNAME = {
+			"Cerchio",
+			"Solidi"
+	};	
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_LISTAVIDEO = {
 			"Cerchio",
 			"Solidi"
 	};
-	String[][] ARGOMENTI = {
-			ARGOMENTI_ARITMETICA_PRIMA,
-			ARGOMENTI_ARITMETICA_SECONDA,
-			ARGOMENTI_ARITMETICA_TERZA,
-			ARGOMENTI_GEOMETRIA_PRIMA,
-			ARGOMENTI_GEOMETRIA_SECONDA,
-			ARGOMENTI_GEOMETRIA_TERZA
+	/****************************/
+	/* *****************************************************************************************************************************/
+	
+	
+	/* ******************* ARRAY STRINGHE ARGOMENTI *****************************************************/
+	String[][] ARGOMENTI_ARITMETICA_PRIMA = {
+			HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_CLASSNAME,
+			HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_LISTAVIDEO
 	};
+	String[][] ARGOMENTI_ARITMETICA_SECONDA = {
+			HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_CLASSNAME,
+			HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_LISTAVIDEO
+	};
+	String[][] ARGOMENTI_ARITMETICA_TERZA = {
+			HASHMAP_ARGOMENTI_ARITMETICA_TERZA_CLASSNAME,
+			HASHMAP_ARGOMENTI_ARITMETICA_TERZA_LISTAVIDEO
+	};
+	String[][] ARGOMENTI_GEOMETRIA_PRIMA = {
+			HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_CLASSNAME,
+			HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_LISTAVIDEO
+	};
+	String[][] ARGOMENTI_GEOMETRIA_SECONDA = {
+			HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_CLASSNAME,
+			HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_LISTAVIDEO
+	};
+	String[][] ARGOMENTI_GEOMETRIA_TERZA = {
+			HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_CLASSNAME,
+			HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_LISTAVIDEO
+	};
+
 	/* ****************************************************************************************************/
 
-	
 	/* ************************************ NUMERO PAGINE PER ARGOMENTI *********************************************/
 	int NUMERO_PAGINE_FRAZIONI = 6;
 	int NUMERO_PAGINE_SOMMA = 8;
 	int NUMERO_PAGINE_INSIEMI = 5;
+	int NUMERO_PAGINE_NUMNATURALI = 6;
 	/* ***************************************************************************************************************/
 }

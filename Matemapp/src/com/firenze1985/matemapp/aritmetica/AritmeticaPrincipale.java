@@ -4,7 +4,6 @@
 package com.firenze1985.matemapp.aritmetica;
 
 import packageActivity.BaseActivity;
-import android.view.WindowManager;
 
 import com.firenze1985.matemapp.Materia;
 import com.firenze1985.matemapp.MenuPrincipale;

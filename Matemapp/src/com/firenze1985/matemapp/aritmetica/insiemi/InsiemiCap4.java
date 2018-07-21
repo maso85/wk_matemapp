@@ -7,15 +7,9 @@ import java.util.HashMap;
 
 import android.graphics.Typeface;
 import android.os.Bundle;
-import android.text.SpannableStringBuilder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
-
-
-
-
 
 import com.firenze1985.matemapp.Argomento;
 import com.firenze1985.matemapp.utility.MathSymbol;

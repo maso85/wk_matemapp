@@ -60,6 +60,11 @@
             android:noHistory="true"
             android:label="@string/label_aritmetica_insiemi">
         </activity>        
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.unitadidattiche.NumNaturali"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_numnaturali">
+        </activity>   
         <!-- GEOMETRIA: principale e divisioni per anno -->
         <activity
             android:name="com.firenze1985.matemapp.geometria.GeometriaPrincipale"

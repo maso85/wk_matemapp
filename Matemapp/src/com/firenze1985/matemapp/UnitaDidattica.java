@@ -3,9 +3,6 @@
  */
 package com.firenze1985.matemapp;
 
-import com.firenze1985.matemapp.paginatori.PaginatoreGenerico;
-import com.firenze1985.matemapp.utility.Const;
-
 import packageActivity.MyFragmentActivity;
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
@@ -13,7 +10,9 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.WindowManager;
+
+import com.firenze1985.matemapp.paginatori.PaginatoreGenerico;
+import com.firenze1985.matemapp.utility.Const;
 
 /**
  * @author Administrator
