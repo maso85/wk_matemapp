@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 
+import com.firenze1985.matemapp.CapitoloLavoriInCorso;
 import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap1;
 import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap2;
 
@@ -34,13 +35,13 @@ public class PaginatoreNumNaturali extends PaginatoreGenerico {
         case 1:
             return new NumNaturaliCap2();
         case 2:
-            return new NumNaturaliCap1();
+            return new CapitoloLavoriInCorso();
 	    case 3:
-	        return new NumNaturaliCap1();
+	        return new CapitoloLavoriInCorso();
 	    case 4:
-	        return new NumNaturaliCap1();	
+	        return new CapitoloLavoriInCorso();	
 	    case 5:
-	        return new NumNaturaliCap1();
+	        return new CapitoloLavoriInCorso();
 	    }
 		return null;
 
