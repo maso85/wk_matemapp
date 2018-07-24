@@ -56,10 +56,11 @@ public abstract class Materia extends GenericActivity {
 					)) {
 					// si lancia la activity della classe prima per una materia specifica
 					Intent intent = new Intent(getApplicationContext(), getClassePrima());
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
 					startActivity(intent);
 				} else {
 					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
-					intent.putExtra("ClassePrecedente", this.getClass());
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
 					startActivity(intent);
 				}
 				//
@@ -80,6 +81,7 @@ public abstract class Materia extends GenericActivity {
 					)) {
 					// si lancia la activity della classe prima per una materia specifica
 					Intent intent = new Intent(getApplicationContext(), getClasseSeconda());
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
 					startActivity(intent);
 				} else {
 					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
@@ -104,6 +106,7 @@ public abstract class Materia extends GenericActivity {
 					)) {
 					// si lancia la activity della classe prima per una materia specifica
 					Intent intent = new Intent(getApplicationContext(), getClasseTerza());
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
 					startActivity(intent);
 				} else {
 					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);

@@ -15,6 +15,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.firenze1985.matemapp.utility.Const;
+import com.firenze1985.matemapp.utility.MatemappUtility;
 
 /**
  * @author Administrator
@@ -41,7 +42,8 @@ public abstract class AnnoScolastico extends GenericActivity {
 	
 	@Override
 	public void setSuperParameter() {
-		setMainActivity(MenuPrincipale.class);
+		Intent intent = getIntent();
+		setMainActivity(MatemappUtility.preparaClassePerTornaIndietro(intent));
 		setCurrentActivity(this);
 		setColorActionBar(Const.ACTION_BAR);
 		//this.getWindow().addFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN);
@@ -98,6 +100,7 @@ public abstract class AnnoScolastico extends GenericActivity {
 						e.printStackTrace();
 					}
 					Intent intent = new Intent(getApplicationContext(), activityClass);
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
 					startActivity(intent);
 				} else {
 					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
