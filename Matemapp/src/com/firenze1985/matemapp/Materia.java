@@ -51,7 +51,7 @@ public abstract class Materia extends GenericActivity {
 			public void onClick(View v) {			
 				//
 				if (
-						(Const.ARITMETICA_PRiMA && AritmeticaPrima.class.equals(getClassePrima())) ||
+						(Const.ARITMETICA_PRIMA && AritmeticaPrima.class.equals(getClassePrima())) ||
 						(Const.GEOMETRIA_PRIMA && GeometriaPrima.class.equals(getClassePrima())
 					)) {
 					// si lancia la activity della classe prima per una materia specifica
@@ -107,6 +107,7 @@ public abstract class Materia extends GenericActivity {
 					startActivity(intent);
 				} else {
 					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
 					startActivity(intent);
 				}
 				//			

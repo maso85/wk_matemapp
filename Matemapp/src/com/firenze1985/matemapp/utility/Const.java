@@ -17,7 +17,7 @@ public interface Const {
 	
 	/* ******************************** COSTANTI PER RILASCI ***************************/
 	boolean GEOMETRIA_PRINCIPALE = false;
-	boolean ARITMETICA_PRiMA = true;
+	boolean ARITMETICA_PRIMA = true;
 	boolean ARITMETICA_SECONDA = false;
 	boolean ARITMETICA_TERZA = false;
 	boolean GEOMETRIA_PRIMA = false;

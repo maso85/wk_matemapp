@@ -14,10 +14,10 @@ import android.content.Intent;
 public class MatemappUtility {
 	public static Class<?> preparaClassePerTornaIndietro(Intent intent){
 		Class<?> classe;
-		String ob = (String) (intent.getExtras()).get("ClassePrecedente");
 		try {
+			String ob = (String) (intent.getExtras()).get("ClassePrecedente");
 			classe = Class.forName("com.firenze1985.matemapp."+ob);
-		} catch (ClassNotFoundException e) {
+		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			classe = MenuPrincipale.class;
 		}
