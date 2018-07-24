@@ -80,8 +80,13 @@ public class MenuPrincipale extends MainActivity {
 			@Override
 			public void onClick(View v) {			
 				// si lancia la activity GeometriaPrincipale
-				Intent intent = new Intent(getApplicationContext(), GeometriaPrincipale.class);
-				startActivity(intent);
+				if (Const.GEOMETRIA_PRINCIPALE) {
+					Intent intent = new Intent(getApplicationContext(), GeometriaPrincipale.class);
+					startActivity(intent);
+				} else {
+					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
+					startActivity(intent);
+				}
 			}
 		});
 		//

@@ -85,14 +85,25 @@ public abstract class AnnoScolastico extends GenericActivity {
 		        String[] arrayRecuperatoClassName = recuperoArrayPerPaginatore(getMateria(), getAnnoScolastico(), 0);
 				// si lancia la activity corrispondente alla unita didattica selezionata
 				Class activityClass = null;
-				try {
-					activityClass = Class.forName(getPackageClasse()+arrayRecuperatoClassName[esimaUnitaDidattica]);
-				} catch (ClassNotFoundException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
+				if (
+						(Const.FRAZIONI && "Frazioni".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
+						(Const.INSIEMI && "Insiemi".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
+						(Const.SOMMA && "Somma".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
+						(Const.NUMNATURALI && "NumNaturali".equals(arrayRecuperatoClassName[esimaUnitaDidattica]))
+						) {
+					try {
+						activityClass = Class.forName(getPackageClasse()+arrayRecuperatoClassName[esimaUnitaDidattica]);
+					} catch (ClassNotFoundException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+					Intent intent = new Intent(getApplicationContext(), activityClass);
+					startActivity(intent);
+				} else {
+					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
+					startActivity(intent);
 				}
-				Intent intent = new Intent(getApplicationContext(), activityClass);
-				startActivity(intent);			
 				}
 			}
 		

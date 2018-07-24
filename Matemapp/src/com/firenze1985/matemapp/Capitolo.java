@@ -28,7 +28,7 @@ import android.widget.TextView;
  * @author Administrator
  *
  */
-public class Argomento extends Fragment {
+public class Capitolo extends Fragment {
 	
 	protected TextView textView;
 	String titoloArgomento;

@@ -3,6 +3,14 @@
  */
 package com.firenze1985.matemapp;
 
+import com.firenze1985.matemapp.aritmetica.AritmeticaPrima;
+import com.firenze1985.matemapp.aritmetica.AritmeticaSeconda;
+import com.firenze1985.matemapp.aritmetica.AritmeticaTerza;
+import com.firenze1985.matemapp.geometria.GeometriaPrima;
+import com.firenze1985.matemapp.geometria.GeometriaSeconda;
+import com.firenze1985.matemapp.geometria.GeometriaTerza;
+import com.firenze1985.matemapp.utility.Const;
+
 import packageActivity.GenericActivity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -41,9 +49,20 @@ public abstract class Materia extends GenericActivity {
 		getButtonClassePrima().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {			
-				// si lancia la activity AritmeticaPrincipale
-				Intent intent = new Intent(getApplicationContext(), getClassePrima());
-				startActivity(intent);			
+				//
+				if (
+						(Const.ARITMETICA_PRiMA && AritmeticaPrima.class.equals(getClassePrima())) ||
+						(Const.GEOMETRIA_PRIMA && GeometriaPrima.class.equals(getClassePrima())
+					)) {
+					// si lancia la activity della classe prima per una materia specifica
+					Intent intent = new Intent(getApplicationContext(), getClassePrima());
+					startActivity(intent);
+				} else {
+					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
+					intent.putExtra("ClassePrecedente", this.getClass());
+					startActivity(intent);
+				}
+				//
 				}			
 			}
 		);
@@ -54,9 +73,20 @@ public abstract class Materia extends GenericActivity {
 		getButtonClasseSeconda().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {			
-				// si lancia la activity AritmeticaPrincipale
-				Intent intent = new Intent(getApplicationContext(), getClasseSeconda());
-				startActivity(intent);			
+				//
+				if (
+						(Const.ARITMETICA_SECONDA && AritmeticaSeconda.class.equals(getClasseSeconda())) ||
+						(Const.GEOMETRIA_SECONDA && GeometriaSeconda.class.equals(getClasseSeconda())
+					)) {
+					// si lancia la activity della classe prima per una materia specifica
+					Intent intent = new Intent(getApplicationContext(), getClasseSeconda());
+					startActivity(intent);
+				} else {
+					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
+					intent.putExtra("ClassePrecedente", getCurrentActivity().getLocalClassName());
+					startActivity(intent);
+				}
+				//			
 				}			
 			}
 		);
@@ -67,9 +97,19 @@ public abstract class Materia extends GenericActivity {
 		getButtonClasseTerza().setOnClickListener(new OnClickListener(){
 			@Override
 			public void onClick(View v) {			
-				// si lancia la activity AritmeticaPrincipale
-				Intent intent = new Intent(getApplicationContext(), getClasseTerza());
-				startActivity(intent);			
+				//
+				if (
+						(Const.ARITMETICA_TERZA && AritmeticaTerza.class.equals(getClasseTerza())) ||
+						(Const.GEOMETRIA_TERZA && GeometriaTerza.class.equals(getClasseTerza())
+					)) {
+					// si lancia la activity della classe prima per una materia specifica
+					Intent intent = new Intent(getApplicationContext(), getClasseTerza());
+					startActivity(intent);
+				} else {
+					Intent intent = new Intent(getApplicationContext(), LavoriInCorso.class);
+					startActivity(intent);
+				}
+				//			
 				}			
 			}
 		);

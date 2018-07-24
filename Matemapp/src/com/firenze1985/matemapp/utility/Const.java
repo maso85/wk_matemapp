@@ -15,6 +15,20 @@ public interface Const {
 	String ACTION_BAR = "#777777";
 	/* **************************************************************************************/
 	
+	/* ******************************** COSTANTI PER RILASCI ***************************/
+	boolean GEOMETRIA_PRINCIPALE = false;
+	boolean ARITMETICA_PRiMA = true;
+	boolean ARITMETICA_SECONDA = false;
+	boolean ARITMETICA_TERZA = false;
+	boolean GEOMETRIA_PRIMA = false;
+	boolean GEOMETRIA_SECONDA = false;
+	boolean GEOMETRIA_TERZA = false;
+	boolean FRAZIONI = false;
+	boolean INSIEMI = true;
+	boolean NUMNATURALI = true;
+	boolean SOMMA = false;
+	/* *********************************************************************************/
+	
 	/* ********************** MATERIE E ANNI SCOLASTICI *********************/
 	String ARITMETICA = "Aritmetica";
 	String GEOMETRIA = "Geometria";
@@ -25,6 +39,7 @@ public interface Const {
 
 	
 	/* ************************ PACKAGE CLASSI ***************************************************/
+	String COMMON_PACKAGE = "com.firenze1985.matemapp";
 	String PACKAGE_ARITMETICA_CLASSE_PRIMA = "com.firenze1985.matemapp.aritmetica.unitadidattiche.";
 	String PACKAGE_ARITMETICA_CLASSE_SECONDA = "com.firenze1985.matemapp.aritmetica.unitadidattiche.";
 	String PACKAGE_ARITMETICA_CLASSE_TERZA = "com.firenze1985.matemapp.aritmetica.unitadidattiche.";
@@ -138,7 +153,7 @@ public interface Const {
 
 	/* ****************************************************************************************************/
 
-	/* ************************************ NUMERO PAGINE PER ARGOMENTI *********************************************/
+	/* ************************************ NUMERO PAGINE PER UNITA DIDATTICA *********************************************/
 	int NUMERO_PAGINE_FRAZIONI = 6;
 	int NUMERO_PAGINE_SOMMA = 8;
 	int NUMERO_PAGINE_INSIEMI = 5;

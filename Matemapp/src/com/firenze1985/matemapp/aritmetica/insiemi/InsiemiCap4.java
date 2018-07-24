@@ -11,13 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.firenze1985.matemapp.Argomento;
+import com.firenze1985.matemapp.Capitolo;
 import com.firenze1985.matemapp.utility.MathSymbol;
 /**
  * @author Administrator
  *
  */
-public class InsiemiCap4 extends Argomento {
+public class InsiemiCap4 extends Capitolo {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {

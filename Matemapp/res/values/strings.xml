@@ -1,5 +1,7 @@
 <resources>
 
+    <!-- lavori in corso - pagina in costruzione -->
+    <string name="lavori_in_corso">Pagina in costruzione.\n\nA breve verrà preparata anche questa pagina.\n\nAttendete fiduciosi!</string>
     <!-- nomi activity - nome intestazione layout -->
     <string name="app_name">Matemapp</string>
     <string name="label_aritmetica_principale">Matemapp - Aritmetica</string>

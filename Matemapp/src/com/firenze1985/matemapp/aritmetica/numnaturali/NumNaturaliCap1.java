@@ -11,13 +11,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.firenze1985.matemapp.Argomento;
+import com.firenze1985.matemapp.Capitolo;
 
 /**
  * @author Administrator
  *
  */
-public class NumNaturaliCap1 extends Argomento {
+public class NumNaturaliCap1 extends Capitolo {
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onCreateView(android.view.LayoutInflater, android.view.ViewGroup, android.os.Bundle)

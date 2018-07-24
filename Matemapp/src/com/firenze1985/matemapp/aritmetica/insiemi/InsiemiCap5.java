@@ -13,7 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
 
-import com.firenze1985.matemapp.Argomento;
+import com.firenze1985.matemapp.Capitolo;
 import com.firenze1985.matemapp.EserciziListAdapter;
 import com.firenze1985.matemapp.R;
 import com.firenze1985.matemapp.utility.MathSymbol;
@@ -22,7 +22,7 @@ import com.firenze1985.matemapp.utility.MathSymbol;
  * @author Administrator
  *
  */
-public class InsiemiCap5 extends Argomento {
+public class InsiemiCap5 extends Capitolo {
 
 	View androidView;
 	ExpandableListView listView;
