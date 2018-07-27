@@ -74,19 +74,9 @@ public class InsiemiCap4 extends Capitolo {
 		inserisciTestoPersonalizzato(testo1,mappaParolaModifica);
 		inserisciStacco();
 		inserisciTestoColoratoInGrassetto("Siamo arrivati alla fine di questa unità: prosegui alla pagina successiva per svolgere gli esercizi!", "#009900");
-		// 2018_07_14 : utilizzo nuovo metodo per personalizzare il testo
-		/*
-		String testoProva = "Prova cazzo tette culo "+MathSymbol.INTERSEZIONE+" vagina";
-		HashMap<String, Integer> mappaParolaModifica = new HashMap<String, Integer>();
-		mappaParolaModifica.put("cazzo", Typeface.BOLD);
-		mappaParolaModifica.put(MathSymbol.INSIEME_VUOTO, Typeface.BOLD_ITALIC);
-		mappaParolaModifica.put("vagina", Typeface.ITALIC);
-		inserisciTestoPersonalizzato(testoProva, mappaParolaModifica);
-		*/
-		//
 		inserisciStacco();
-		inserisciTestoConRiquadroConclusivo("- hai imparato la definizione di sottoinsieme\n\n"
-				+ "- hai imparato la differenza tra sottoinsieme proprio e improprio");
+		inserisciTestoConRiquadroConclusivo("- hai imparato cosa è l'intersezione tra due insiemi\n\n"
+				+ "- hai imparato cosa è l'unione tra due insiemi");
 		return getAndroidView();
 	}
 }

@@ -21,6 +21,7 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -473,6 +474,17 @@ public class Capitolo extends Fragment {
 		textView.setBackgroundColor(Color.parseColor(BACKGROUND_DEFINIZIONE));
 		getLinear().addView(textView);
 		inserisciStacco();
+	}
+	
+	/**
+	 * Metodo che restituisce un'immagine, opportunamente salvata all'interno della cartella <b>drawable</b>
+	 * @param immagine
+	 */
+	protected void inserisciImmagine(int immagine) {
+		ImageView myImage = new ImageView(getContext());
+        myImage.setImageResource(immagine);
+        getLinear().addView(myImage);
+        
 	}
 	
 }

@@ -16,4 +16,7 @@ public interface MathSymbol {
 	String APPARTIENE = "\u2208";
 	String NON_APPARTIENE = "\u2209";
 	
+	/* ******* LETTERE ACCENTATE ***********/
+	String E_MAIUSCOLO_ACCENTATA = "\u00E8";
+	/* *************************************/
 }

@@ -64,7 +64,7 @@ public class NumNaturaliCap1 extends Capitolo {
 		inserisciTesto("Se ben ricordi, allora, in questo caso è preferibile usare la rappresentazione per caratteristica");
 		HashMap<Integer, Integer> mappaInizioFine = new HashMap<Integer, Integer>();
 		mappaInizioFine.put(9, 9);
-		inserisciDefinizione("N={x|x è un numero naturale", mappaInizioFine);
+		inserisciDefinizione("N={x|x è un numero naturale}", mappaInizioFine);
 		inserisciTesto("Nessuno ci vieta di rappresentare il nostro insieme per elencazione:");
 		inserisciDefinizione("N={0, 1, 2, 3, 4, 5, 6....}", mappaInizioFine);
 		inserisciTesto("Dobbiamo solo usare l'accorgimento dei 3 puntini di sospensione, per indicare che si prosegue all'infinito");

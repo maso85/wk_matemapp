@@ -40,7 +40,8 @@ public final class R {
         public static final int ic_launcher_magic=0x7f02000e;
         public static final int lavori_in_corso=0x7f02000f;
         public static final int logo_conv1126_formato72x72=0x7f020010;
-        public static final int simboli_grandi=0x7f020011;
+        public static final int retta_orientata_num_naturali=0x7f020011;
+        public static final int simboli_grandi=0x7f020012;
     }
     public static final class id {
         public static final int arrow=0x7f080008;
