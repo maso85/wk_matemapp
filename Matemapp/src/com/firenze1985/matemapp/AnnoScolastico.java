@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import packageActivity.BaseActivity;
 import packageActivity.GenericActivity;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -74,9 +75,9 @@ public abstract class AnnoScolastico extends GenericActivity {
   
         // creo e istruisco l'adattatore  
         final ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listp);  
-  
         // inietto i dati  
         listaArgomenti.setAdapter(adapter);
+        (listaArgomenti.getChildAt(0)).setBackgroundColor(Color.parseColor("#FF0000"));
         listaArgomenti.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
         	

@@ -49,12 +49,16 @@ public class NumNaturaliCap2 extends Capitolo {
 		inserisciTesto("Facciamo una cosa: azzeriamo la nostra mente su questi concetti e ripartiamo da zero. Sperando di arrivare a capire meglio!");
 		inserisciStacco();
 		//
-		testo1 = "Innanzitutto, tutti i numeri sono formati da cifre. Una cifra è un elemento del seguente insieme:\n\nC={0, 1, 2, 3, 4, 5, 6, 7, 8, 9}\n\nUna cifra quindi è uno di quei dieci elementi. Uno di quei simboli.";
+		testo1 = "Innanzitutto, tutti i numeri sono formati da cifre. Cos'è una cifra?";
 		mappaParolaModifica = new HashMap<String, Integer>();
 		mappaParolaModifica.put("cifre", Typeface.BOLD);
-		mappaParolaModifica.put("cifra", Typeface.BOLD);
 		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
-		inserisciTesto("Se queste cifre, questi simboli, li mettiamo uno di fianco all'altro che succede? Come si legge l'elemento creato?");
+		testo1 = "Una cifra è un elemento del seguente insieme:\n\nC={0, 1, 2, 3, 4, 5, 6, 7, 8, 9}";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("cifra", Typeface.BOLD);
+		inserisciDefinizioneNuovoModo(testo1, mappaParolaModifica);
+		inserisciTesto("Una cifra quindi è uno di quei dieci elementi. Uno di quei simboli.");
+		inserisciTesto("Se tali cifre, tali simboli, li mettiamo uno di fianco all'altro che succede? Come si legge l'elemento creato?");
 		inserisciTesto("Prendiamo la cifra 1 e la cifra 8. Se li affianchiamo otteniamo 18. Che noi sappiamo essere diciotto. Abbiamo creato un numero a due cifre.");
 		inserisciTesto("Cambia se invertiamo l'ordine? Beh, otteniamo 81 che noi sappiamo essere ottantuno. Nettamente differente da diciotto. Cosa è cambiato pertanto da 18 a 81 ?");
 		//
@@ -66,6 +70,7 @@ public class NumNaturaliCap2 extends Capitolo {
 		//
 		testo1 = "Abbiamo la parola chiave: il nostro modo di rappresentare i numeri si chiama infatti posizionale. Ossia, per rappresentare tutti i numeri possibili noi disponiamo di soli dieci simboli, ossia le cifre: mescolando assieme tali cifre e dando un senso alla posizione di ognuna di loro, riusciamo a scrivere tutti i numeri.";
 		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("chiave", Typeface.BOLD);
 		mappaParolaModifica.put("posizionale", Typeface.BOLD);
 		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
 		inserisciStacco();

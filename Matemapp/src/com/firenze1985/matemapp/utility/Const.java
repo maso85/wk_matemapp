@@ -157,6 +157,6 @@ public interface Const {
 	int NUMERO_PAGINE_FRAZIONI = 6;
 	int NUMERO_PAGINE_SOMMA = 8;
 	int NUMERO_PAGINE_INSIEMI = 5;
-	int NUMERO_PAGINE_NUMNATURALI = 6;
+	int NUMERO_PAGINE_NUMNATURALI = 5;
 	/* ***************************************************************************************************************/
 }
