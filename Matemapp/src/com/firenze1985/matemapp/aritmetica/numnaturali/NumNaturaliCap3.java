@@ -31,6 +31,7 @@ public class NumNaturaliCap3 extends Capitolo {
 			hashmap.put("conviene", Typeface.BOLD);
 			hashmap.put("semiretta orientata", Typeface.BOLD);
 			inserisciTestoPersonalizzato(testo1, hashmap);
+			inserisciStacco();
 			//
 			testo1 = "Intanto, cos'è una semiretta?"+MathSymbol.E_MAIUSCOLO_ACCENTATA+" una retta che ha un inizio ma non ha una fine. Giusto per completezza, una retta è una linea dritta che non ha nè un inizio nè una fine.\nLa parola orientata significa che la nostra semiretta ha una precisa orientazione: più si va verso destra e più i numeri crescono. Il successivo di un numero n pertanto lo troveremo alla sua destra; il suo precedente, invece, alla sua sinistra.";
 			hashmap = new HashMap<String,Integer>();
@@ -39,11 +40,21 @@ public class NumNaturaliCap3 extends Capitolo {
 			hashmap.put("successivo", Typeface.ITALIC);
 			hashmap.put("precedente", Typeface.ITALIC);
 			inserisciTestoPersonalizzato(testo1, hashmap);
+			inserisciStacco();
 			//
 			testo1 = "Abbiamo detto che la nostra semiretta ha un inizio: questo inizio coincide con lo 0, ossia con il più piccolo numero naturale. Per indicare, poi, che i numeri si estendono in maniera infinita verso destra, inseriamo nell'estremo destro della semiretta una freccia orientata. Ecco perchè appunto si dice orientata.";
 			hashmap = new HashMap<String,Integer>();
 			hashmap.put("freccia orientata", Typeface.ITALIC);
 			inserisciTestoPersonalizzato(testo1, hashmap);
+			inserisciStacco();
+			//
+			testo1 = "A che distanza posizioniamo i numeri? Dobbiamo scegliere una unità di misura e mantenere quella.\nUn centimetro, un quadretto, due quadretti e mezzo...ogni volta che rappresentiamo i numeri sulla semiretta orientata definiremo la nostra unità di misura e utilizzeremo quella.\nOgni volta, pertanto, sceglieremo quella che ci conviene di più: se il nostro quaderno in larghezza ha 40 quadratini e noi dobbiamo rappresentare i numeri fino a 12, ha senso usare come unità il quadretto? Nessuno ce lo vieta, ma il disegno magari viene piccolo e, se eventualmente ci dobbiamo lavorare, non ci aiuta: utilizzando invece 2 o 3 unità per quadretto riusciamo comunque a rappresentare tutti i numeri richiesti ma il disegno è più grande e probabilmente ci permetterà di lavorare meglio.";			
+			hashmap = new HashMap<String,Integer>();
+			hashmap.put("scegliere", Typeface.BOLD);
+			hashmap.put("unità di misura", Typeface.BOLD);
+			hashmap.put("conviene", Typeface.ITALIC);			
+			inserisciTestoPersonalizzato(testo1, hashmap);
+			inserisciStacco();
 			//
 			inserisciTesto("Se hai seguito bene le nostre indicazioni, il disegno che trovi qui sotto dovrebbe esserti estremamente chiaro:");
 			inserisciStacco();
