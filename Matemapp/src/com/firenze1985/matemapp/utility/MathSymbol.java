@@ -18,5 +18,6 @@ public interface MathSymbol {
 	
 	/* ******* LETTERE ACCENTATE ***********/
 	String E_MAIUSCOLO_ACCENTATA = "\u00E8";
+	String A_MAIUSCOLO_ACCENTATA = "\u00C0";
 	/* *************************************/
 }

@@ -66,18 +66,26 @@ public abstract class AnnoScolastico extends GenericActivity {
 		// definisco un ArrayList  
         final ArrayList <String> listp = new ArrayList<String>();  
         String[] arrayRecuperatoListaVideo = recuperoArrayPerPaginatore(getMateria(), getAnnoScolastico(), 1);
-        
+        String[] arrayRecuperatoAvanzamentoLavori = recuperoArrayPerPaginatore(getMateria(), getAnnoScolastico(), 2);
         for (int i = 0; i < arrayRecuperatoListaVideo.length; ++i) {  
              listp.add(arrayRecuperatoListaVideo[i]);  
         }  
 		// recupero la lista dal layout  
         final ListView listaArgomenti = (ListView) findViewById(R.id.idListaUnitaDidattica);  
-  
+        
+        //
+        ArrayList<ElementoListaUnitaDidattica> dataModels= new ArrayList<ElementoListaUnitaDidattica>();
+        for (int i = 0; i < arrayRecuperatoListaVideo.length; ++i) {  
+            dataModels.add(new ElementoListaUnitaDidattica(arrayRecuperatoListaVideo[i], arrayRecuperatoAvanzamentoLavori[i]));
+
+        }
+        UnitaDidatticaListAdapter unitaAdapter = new UnitaDidatticaListAdapter(dataModels, getApplicationContext());
+        //
+        
         // creo e istruisco l'adattatore  
         final ArrayAdapter <String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, listp);  
         // inietto i dati  
-        listaArgomenti.setAdapter(adapter);
-        (listaArgomenti.getChildAt(0)).setBackgroundColor(Color.parseColor("#FF0000"));
+        listaArgomenti.setAdapter(unitaAdapter);
         listaArgomenti.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 
         	

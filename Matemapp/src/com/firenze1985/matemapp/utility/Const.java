@@ -62,8 +62,15 @@ public interface Const {
 	};
 	/* *************************************************************************************/
 
-
+	
+	/* ************* STATO AVANZAMENTO LAVORI ****************/
+	String ANCORA_DA_COMINCIARE = "In lavorazione";
+	String NON_COMPLETA = "Parzialmente disponibile";
+	String COMPLETA = "Completamente disponibile";
+	
 	/* ********************************************************* HASHMAP CLASSNAME - NOME ARGOMENTO ********************************/
+	String UNITA_DIDATTICA = "UNIT"+MathSymbol.A_MAIUSCOLO_ACCENTATA+" DIDATTICA ";
+	/************************/
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_CLASSNAME = {
 			"Insiemi",
 			"NumNaturali",
@@ -71,10 +78,17 @@ public interface Const {
 			"Frazioni"
 	};	
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_LISTAVIDEO = {
-			"Insiemi",
-			"Numeri Naturali",
-			"Somma",
-			"Frazioni"
+			UNITA_DIDATTICA+"1 - Insiemi",
+			UNITA_DIDATTICA+"2 - Numeri Naturali",
+			UNITA_DIDATTICA+"3 - Somma",
+			UNITA_DIDATTICA+"4 - Frazioni"
+	};
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_AVANZAMENTO_LAVORI = {
+			COMPLETA,
+			NON_COMPLETA,
+			ANCORA_DA_COMINCIARE,
+			ANCORA_DA_COMINCIARE
+
 	};
 	/**********************/
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_CLASSNAME = {
@@ -85,6 +99,10 @@ public interface Const {
 			"Radici",
 			"Proporzioni"
 	};
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_AVANZAMENTO_LAVORI = {
+			ANCORA_DA_COMINCIARE,
+			ANCORA_DA_COMINCIARE
+	};
 	/*********************/
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_TERZA_CLASSNAME = {
 			"NumRelativi",
@@ -93,6 +111,10 @@ public interface Const {
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_TERZA_LISTAVIDEO = {
 			"Numeri Relativi",
 			"Algebra"
+	};
+	String[] HASHMAP_ARGOMENTI_ARITMETICA_TERZA_AVANZAMENTO_LAVORI = {
+			ANCORA_DA_COMINCIARE,
+			ANCORA_DA_COMINCIARE
 	};
 	/**********************/
 	String[] HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_CLASSNAME = {
@@ -103,6 +125,10 @@ public interface Const {
 			"Segmenti",
 			"Triangoli"
 	};
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_AVANZAMENTO_LAVORI = {
+			ANCORA_DA_COMINCIARE,
+			ANCORA_DA_COMINCIARE
+	};
 	/*************************/
 	String[] HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_CLASSNAME = {
 			"TeoPitagora",
@@ -111,6 +137,10 @@ public interface Const {
 	String[] HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_LISTAVIDEO = {
 			"Teorema di Pitagora",
 			"Similitudini"
+	};
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_AVANZAMENTO_LAVORI = {
+			ANCORA_DA_COMINCIARE,
+			ANCORA_DA_COMINCIARE
 	};
 	/*************************/
 	String[] HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_CLASSNAME = {
@@ -121,6 +151,10 @@ public interface Const {
 			"Cerchio",
 			"Solidi"
 	};
+	String[] HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_AVANZAMENTO_LAVORI = {
+			ANCORA_DA_COMINCIARE,
+			ANCORA_DA_COMINCIARE
+	};
 	/****************************/
 	/* *****************************************************************************************************************************/
 	
@@ -128,27 +162,33 @@ public interface Const {
 	/* ******************* ARRAY STRINGHE ARGOMENTI *****************************************************/
 	String[][] ARGOMENTI_ARITMETICA_PRIMA = {
 			HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_CLASSNAME,
-			HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_LISTAVIDEO
+			HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_LISTAVIDEO,
+			HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_AVANZAMENTO_LAVORI
 	};
 	String[][] ARGOMENTI_ARITMETICA_SECONDA = {
 			HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_CLASSNAME,
-			HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_LISTAVIDEO
+			HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_LISTAVIDEO,
+			HASHMAP_ARGOMENTI_ARITMETICA_SECONDA_AVANZAMENTO_LAVORI
 	};
 	String[][] ARGOMENTI_ARITMETICA_TERZA = {
 			HASHMAP_ARGOMENTI_ARITMETICA_TERZA_CLASSNAME,
-			HASHMAP_ARGOMENTI_ARITMETICA_TERZA_LISTAVIDEO
+			HASHMAP_ARGOMENTI_ARITMETICA_TERZA_LISTAVIDEO,
+			HASHMAP_ARGOMENTI_ARITMETICA_TERZA_AVANZAMENTO_LAVORI
 	};
 	String[][] ARGOMENTI_GEOMETRIA_PRIMA = {
 			HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_CLASSNAME,
-			HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_LISTAVIDEO
+			HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_LISTAVIDEO,
+			HASHMAP_ARGOMENTI_GEOMETRIA_PRIMA_AVANZAMENTO_LAVORI
 	};
 	String[][] ARGOMENTI_GEOMETRIA_SECONDA = {
 			HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_CLASSNAME,
-			HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_LISTAVIDEO
+			HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_LISTAVIDEO,
+			HASHMAP_ARGOMENTI_GEOMETRIA_SECONDA_AVANZAMENTO_LAVORI
 	};
 	String[][] ARGOMENTI_GEOMETRIA_TERZA = {
 			HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_CLASSNAME,
-			HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_LISTAVIDEO
+			HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_LISTAVIDEO,
+			HASHMAP_ARGOMENTI_GEOMETRIA_TERZA_AVANZAMENTO_LAVORI
 	};
 
 	/* ****************************************************************************************************/
