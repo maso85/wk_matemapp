@@ -15,6 +15,8 @@ public interface MathSymbol {
 	String INSIEME_VUOTO = "\u2205";
 	String APPARTIENE = "\u2208";
 	String NON_APPARTIENE = "\u2209";
+	String MINORE_STRETTO = "\u003C";
+	String MAGGIORE_STRETTO = "\u003E";
 	
 	/* ******* LETTERE ACCENTATE ***********/
 	String E_MAIUSCOLO_ACCENTATA = "\u00E8";

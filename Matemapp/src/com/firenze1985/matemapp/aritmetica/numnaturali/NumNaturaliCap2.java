@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.firenze1985.matemapp.Capitolo;
+import com.firenze1985.matemapp.utility.MathSymbol;
 
 /**
  * @author Administrator
@@ -161,9 +162,63 @@ public class NumNaturaliCap2 extends Capitolo {
 		mappaParolaModifica.put("precisini", Typeface.ITALIC);
 		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
 		//		
-		
+		inserisciTesto("A cosa ci serve tutto questo? Vediamo.");
+		//
+		//
+		testo1 = "Quando alle elementari hai imparato l'alfabeto, per caso hai imparato prima la F, poi la N, poi la Z, poi la C, poi la A ? Certo che no. vi siete dati un ordine. Ecco, lo stesso ragionameto vale anche per i numeri naturali. Così come l'insieme delle lettere, anche l'insieme dei numeri naturali è ordinato.";	
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("ordine", Typeface.ITALIC);
+		mappaParolaModifica.put("ordinato", Typeface.ITALIC);
+		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
+		//
+		inserisciTesto("Possiamo pertanto affermare quanto segue:");
+		//
+		testo1 = "Nell'insieme dei numeri naturali ogni elemento (tranne lo 0) è minore del suo successivo e maggiore del suo precedente.";	
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("minore", Typeface.ITALIC);
+		mappaParolaModifica.put("maggiore", Typeface.ITALIC);
+		inserisciDefinizioneNuovoModo(testo1, mappaParolaModifica);
+		//
+		inserisciTesto("Possiamo adesso confrontare due numeri. Quanti casi possibili ci sono? Che il primo sia più grande, che il secondo sia più grande, oppure che siano uguali. Che simboli utilizziamo?");
+		//
+		testo1 = "Per scrivere che 7 è maggiore di 4 scriveremo\n7 \u003E 4.\nPer scrivere che 6 è minore di 14 scriveremo\n6 \u003C 14.\nPer scrivere che 5 è uguale a 5 scriveremo\n5 = 5.";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("7 è maggiore di 4", Typeface.ITALIC);
+		mappaParolaModifica.put("7 \u003E 4", Typeface.BOLD);
+		mappaParolaModifica.put("6 è minore di 14", Typeface.ITALIC);
+		mappaParolaModifica.put("6 \u003C 14", Typeface.BOLD);
+		mappaParolaModifica.put("5 è uguale a 5", Typeface.ITALIC);
+		mappaParolaModifica.put("5 = 5", Typeface.BOLD);
+		inserisciDefinizioneNuovoModo(testo1, mappaParolaModifica);
+		//
+		testo1 = "Capito questo, possiamo ordinare i numeri naturali sia in ordine crescente ossia dal più piccolo al più grande, sia in ordine decrescente ossia dal più grande al più piccolo.";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("ordine crescente", Typeface.BOLD);
+		mappaParolaModifica.put("dal più piccolo al più grande", Typeface.ITALIC);
+		mappaParolaModifica.put("ordine decrescente", Typeface.BOLD);
+		mappaParolaModifica.put("dal più grande al più piccolo", Typeface.ITALIC);
+		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
+		//
+		inserisciTesto("Ad esempio, se abbiamo i numeri 14, 18, 6, 7, 21 e li vogliamo ordinare in ordine crescente otteniamo:\n\n6 7 14 18 21.\n\nSe invece vogliamo ordinarli in ordine decrescente allora otteniamo:\n\n21 18 14 7 6");		
+		//
+		testo1 = "Questo discorso sull'ordinamento lo avremmo potuto fare anche nella pagina precedente esatto? Forse.\nFintanto che si parla di numeri piccoli non è complicato. Ma quando i numeri sono grandi come facciamo a capire chi è più grande di chi?\n\nSupponiamo di dover confrontare 3.402 con 1.989; dobbiamo cercare di stabilire chi sia il più grande. Come si procede?\nLa prima cosa da confrontare sono le cifre nella posizione più elevata, in questo caso le unità di migliaia. Il primo numero in tale posizione ha un 3, il secondo numero ha un 1: abbiamo già individuato chi sia il più grande tra i due, ovvero il primo numero.\nDobbiamo confrontare anche le altre cifre? No, e non è un consiglio: è un obbligo. Una volta individuato quale sia il più grande dobbiamo fermarci, altrimenti rischiamo di fare errori e portare solo confusione.\nProvate per curiosità a proseguire: confrontiamo le centinaia di unità adesso. Il primo numero ha 4 in quella posizione, il secondo numero ha 9. Che significa? Che siamo uno a uno? Non ha molto senso.\nImmaginiamola così: è una serie di calci di rigore in cui il primo che segna vince. Una volta che una squadra vince, non è che si prosegue. Qui è lo stesso discorso: partendo dalle cifre poste nella posizione più elevata, una volta che abbiamo stabilito quale dei due numeri sia il più grande ci dobbiamo fermare, perchè abbiamo raggiunto il nostro scopo.\nScriviamo quindi 3.402 "+MathSymbol.MAGGIORE_STRETTO+" 1.989";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("cifre nella posizione più elevata", Typeface.ITALIC);
+		mappaParolaModifica.put("uno a uno", Typeface.ITALIC);
+		mappaParolaModifica.put("il primo che segna vince", Typeface.ITALIC);
+		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
+		//
+		inserisciTesto("Se i numeri sono molto più grandi? Nessuna paura: il nostro metodo funziona con tutti i numeri. Ed è veloce, perchè appena trovi due cifre differenti nella stessa posizione sai già rispondere: chi segna per primo vince.");
+		testo1 = "Prendi il numero 3.940.302.119 e il numero 3.987.102.166; Partendo dalle cifre nella posizione più elevata, devi confrontare 3 con 3. Niente da fare, le due cifre coincidono: dobbiamo proseguire. Confronta adesso le cifre alla seconda posizione più elevata: sono entrambi 9. Prosegui alla terza posizione: il primo numero ha un 4, il secondo un 8.\nBasta, ti puoi fermare, hai già concluso:\n3.940.302.119 "+MathSymbol.MINORE_STRETTO+" 3.987.102.166\n\nCome si leggono i numeri? Cosa rappresentano? Non sono domande utili ai fini del nostro scopo di adesso. Il nostro scopo di adesso è capire chi sia il più grande. Se poi rappresentano i conti in banca di due industriali o il numero di abitanti di due continenti, è rilevante?\nNo. Stai cominciando a diventare sempre più matematico: che siano soldi o abitanti o globuli rossi, la procedura per stabilire chi sia più grande è la stessa. Questo che hai fatto adesso si chiama modellizzare un problema.";
+		mappaParolaModifica = new HashMap<String, Integer>();
+		mappaParolaModifica.put("Non sono domande utili", Typeface.ITALIC);
+		mappaParolaModifica.put("Il nostro scopo di adesso è capire chi sia il più grande", Typeface.BOLD);
+		mappaParolaModifica.put("matematico", Typeface.ITALIC);
+		mappaParolaModifica.put("modellizzare un problema", Typeface.ITALIC);
+		inserisciTestoPersonalizzato(testo1, mappaParolaModifica);
+		//
 		inserisciStacco();
-		inserisciTestoConRiquadroConclusivo("- hai imparato cosa è una cifra\n\n- hai imparato il sistema posizionale\n\n- hai imparato come rappresentare un numero\n\n- hai imparato le classi e gli ordini del nostro sistema posizionale");
+		inserisciTestoConRiquadroConclusivo("- hai imparato cosa è una cifra\n\n- hai imparato il sistema posizionale\n\n- hai imparato come rappresentare un numero\n\n- hai imparato le classi e gli ordini del nostro sistema posizionale\n\n- hai imparato i simboli di maggiore, minore, uguale\n\n- hai imparato a confrontare i numeri per stabilire chi sia il più grande\n\n- hai imparato a ordinare i numeri in ordine crescente o decrescente");
 		return getAndroidView();
 
 	}

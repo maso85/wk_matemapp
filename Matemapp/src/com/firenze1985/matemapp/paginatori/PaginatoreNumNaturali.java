@@ -13,6 +13,7 @@ import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap1;
 import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap2;
 import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap3;
 import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap4;
+import com.firenze1985.matemapp.aritmetica.numnaturali.NumNaturaliCap5;
 
 /**
  * @author Administrator
@@ -41,7 +42,7 @@ public class PaginatoreNumNaturali extends PaginatoreGenerico {
 	    case 3:
 	        return new NumNaturaliCap4();
 	    case 4:
-	        return new CapitoloLavoriInCorso();	
+	        return new NumNaturaliCap5();	
 	    }
 		return null;
 
