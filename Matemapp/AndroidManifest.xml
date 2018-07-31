@@ -70,7 +70,12 @@
             android:name="com.firenze1985.matemapp.aritmetica.unitadidattiche.NumNaturali"
             android:noHistory="true"
             android:label="@string/label_aritmetica_numnaturali">
-        </activity>   
+        </activity>
+        <activity
+            android:name="com.firenze1985.matemapp.aritmetica.unitadidattiche.Operazioni"
+            android:noHistory="true"
+            android:label="@string/label_aritmetica_operazioni">
+        </activity> 
         <!-- GEOMETRIA: principale e divisioni per anno -->
         <activity
             android:name="com.firenze1985.matemapp.geometria.GeometriaPrincipale"

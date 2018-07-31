@@ -100,7 +100,8 @@ public abstract class AnnoScolastico extends GenericActivity {
 						(Const.FRAZIONI && "Frazioni".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
 						(Const.INSIEMI && "Insiemi".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
 						(Const.SOMMA && "Somma".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
-						(Const.NUMNATURALI && "NumNaturali".equals(arrayRecuperatoClassName[esimaUnitaDidattica]))
+						(Const.NUMNATURALI && "NumNaturali".equals(arrayRecuperatoClassName[esimaUnitaDidattica])) ||
+						(Const.OPERAZIONI && "Operazioni".equals(arrayRecuperatoClassName[esimaUnitaDidattica]))
 						) {
 					try {
 						activityClass = Class.forName(getPackageClasse()+arrayRecuperatoClassName[esimaUnitaDidattica]);

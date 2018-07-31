@@ -1,4 +1,4 @@
-Aggiornato al 2018_07_24
+Aggiornato al 2018_07_31
 
 Materia 						(aritmetica)
 	AnnoScolastico 				(prima)
@@ -12,6 +12,7 @@ how to INSERIRE NUOVA UNITA DIDATTICA E RELATIVE PAGINE DI ARGOMENTO:
 1) Nella classe Const:
 	1.1) inserire opportunamente una variabile 'int' che esprima il numero di pagine della nostra UnitaDidattica
 	1.2) aggiungere il nome della nostra nuova UnitaDidattica nel percorso 'materia+annoScolastico' opportuno
+	1.3) inserire opportunamente una variabile 'boolean' con il nome dell'unità didattica. Ci servirà nella classe AnnoScolastico.
 2) Creare una nuova classe che estende Capitolo, facendo override del metodo 'onCreateView', al cui interno:
 	2.1) richiamiamo il metodo 'settaggioViewLayoutTitoliPaginaClassica' (in caso di pagina NON di esercizi). Dei 4 argomenti passati:
 		2.1.1) i primi 2 sono standard: inflater, container
@@ -28,10 +29,10 @@ how to INSERIRE NUOVA UNITA DIDATTICA E RELATIVE PAGINE DI ARGOMENTO:
 		4.2.1) i primi 3 sono standard: getSupportFragmentManager(), getApplicationContext(), findViewById(R.layout.viewpager_layout)
 		4.2.2) il quarto argomento è il numero di pagine che avrà la nostra UnitaDidattica, ovvero la variabile 'int' opportunamente settata nella classe Const
 5) Su AndroidManifest.xml aggiornare l'elenco delle Activity inserendo il nodo relativo alla nuova UnitaDidattica aggiunta
-		
+6) Nella classe AnnoScolastico aggiornare 		
 Fatto questo ci ritroveremo la nostra nuova unita didattica nella listView,
 corrispondente alla combinazione 'materia+annoScolastico' che abbiamo scelto nella classe Const.
-A questo punto possiamo utilizzare i vari metodi di inserimento testo all'interno delle nostre classi estendenti Argomento.
+A questo punto possiamo utilizzare i vari metodi di inserimento testo all'interno delle nostre classi estendenti Capitolo.
 
 
 

@@ -63,15 +63,14 @@ public class EserciziListAdapter extends BaseExpandableListAdapter {
 			txtListChild.setBackgroundColor(Color.parseColor("#DDCCCC"));
 		}		
 		HashMap<String, Integer> mappaParolaModifica = new HashMap<String, Integer>();
-		mappaParolaModifica.put("Esercizio 1:", Typeface.BOLD);
-		mappaParolaModifica.put("Esercizio 2:", Typeface.BOLD);
-		mappaParolaModifica.put("Esercizio 3:", Typeface.BOLD);
-		mappaParolaModifica.put("Esercizio 4:", Typeface.BOLD);
-		mappaParolaModifica.put("Esercizio 5:", Typeface.BOLD);
-		mappaParolaModifica.put("Esercizio 6:", Typeface.BOLD);
-		mappaParolaModifica.put("Esercizio 7:", Typeface.BOLD);
-		mappaParolaModifica.put("Compito 1:", Typeface.BOLD);
-		mappaParolaModifica.put("Compito 2:", Typeface.BOLD);
+		// rendi in grassetto i titoli di esercizi e compiti
+		// non sapendo a priori quanti esercizi per argomento inserisco, faccio fare una iterazione fino a 20 sicuro che,
+		// per ogni argomento, non metterò mai più di 20 esercizi o compiti
+		for (int i = 0; i < 20; i++) {
+			int numEs = i + 1;
+			mappaParolaModifica.put("Esercizio "+numEs+":", Typeface.BOLD);
+			mappaParolaModifica.put("Compito "+numEs+":", Typeface.BOLD);
+		}
 
 		ModificaTesto.inserisciTestoPersonalizzato(null, txtListChild, childText, mappaParolaModifica);
 		return convertView;

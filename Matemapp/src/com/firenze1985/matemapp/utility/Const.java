@@ -25,7 +25,8 @@ public interface Const {
 	boolean GEOMETRIA_TERZA = false;
 	boolean FRAZIONI = false;
 	boolean INSIEMI = true;
-	boolean NUMNATURALI = true;
+	boolean NUMNATURALI = true;	
+	boolean OPERAZIONI = true;
 	boolean SOMMA = false;
 	/* *********************************************************************************/
 	
@@ -74,18 +75,21 @@ public interface Const {
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_CLASSNAME = {
 			"Insiemi",
 			"NumNaturali",
+			"Operazioni",
 			"Somma",
 			"Frazioni"
 	};	
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_LISTAVIDEO = {
 			UNITA_DIDATTICA+"1 - Insiemi",
 			UNITA_DIDATTICA+"2 - Numeri Naturali",
-			UNITA_DIDATTICA+"3 - Somma",
-			UNITA_DIDATTICA+"4 - Frazioni"
+			UNITA_DIDATTICA+"3 - Le Quattro Operazioni",			
+			UNITA_DIDATTICA+"4 - Somma",
+			UNITA_DIDATTICA+"5 - Frazioni"
 	};
 	String[] HASHMAP_ARGOMENTI_ARITMETICA_PRIMA_AVANZAMENTO_LAVORI = {
 			COMPLETA,
 			COMPLETA,
+			NON_COMPLETA,
 			ANCORA_DA_COMINCIARE,
 			ANCORA_DA_COMINCIARE
 
@@ -198,5 +202,7 @@ public interface Const {
 	int NUMERO_PAGINE_SOMMA = 8;
 	int NUMERO_PAGINE_INSIEMI = 5;
 	int NUMERO_PAGINE_NUMNATURALI = 5;
+	int NUMERO_PAGINE_OPERAZIONI = 5;
+	
 	/* ***************************************************************************************************************/
 }

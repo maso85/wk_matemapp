@@ -10,6 +10,7 @@
     <string name="label_aritmetica_somma">Matemapp - Somma</string>
     <string name="label_aritmetica_insiemi">Matemapp - Insiemi</string>
     <string name="label_aritmetica_numnaturali">Matemapp - Numeri Naturali</string>
+    <string name="label_aritmetica_operazioni">Matemapp - Le Quattro Operazioni</string>
     
     <!-- menu da tasto -->
     <string name="versione_app">Versione App</string>
