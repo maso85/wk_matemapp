@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.view.View;
 
+import com.firenze1985.matemapp.CapitoloLavoriInCorso;
 import com.firenze1985.matemapp.aritmetica.operazioni.OperazioniCap1;
 
 /**
@@ -28,13 +29,13 @@ public class PaginatoreOperazioni extends PaginatoreGenerico {
         case 0:
             return new OperazioniCap1();
         case 1:
-            return new OperazioniCap1();
+            return new CapitoloLavoriInCorso();
         case 2:
-            return new OperazioniCap1();
+            return new CapitoloLavoriInCorso();
 	    case 3:
-	        return new OperazioniCap1();
+	        return new CapitoloLavoriInCorso();
 	    case 4:
-	        return new OperazioniCap1();
+	        return new CapitoloLavoriInCorso();
 	    }
 		return null;
 
