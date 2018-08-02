@@ -317,8 +317,8 @@ public class ModificaTesto {
 	/**
 	 * Metodo che restituisce un testo con un riquadro, anteposto dalla parola <i>Conclusioni</i>
 	 */
-	public static void inserisciTestoConRiquadroConclusivo(LinearLayout linear, TextView textView, String testo) {
-		inserisciTestoColoratoInGrassetto(linear, textView, "Conclusioni", "#880000");
+	public static void inserisciTestoConRiquadroConclusivo(LinearLayout linear, TextView textView, Context context, String testo) {
+		inserisciTestoColoratoInGrassetto(linear, new TextView(context), "Conclusioni", "#880000");
 		GradientDrawable gd = new GradientDrawable();
         gd.setColor(Color.parseColor("#FFFFFF")); // Changes this drawbale to use a single color instead of a gradient
         gd.setStroke(3, Color.parseColor("#880000"));

@@ -10,6 +10,7 @@ import android.view.View;
 
 import com.firenze1985.matemapp.CapitoloLavoriInCorso;
 import com.firenze1985.matemapp.aritmetica.operazioni.OperazioniCap1;
+import com.firenze1985.matemapp.aritmetica.operazioni.OperazioniCap2;
 
 /**
  * @author Administrator
@@ -29,7 +30,7 @@ public class PaginatoreOperazioni extends PaginatoreGenerico {
         case 0:
             return new OperazioniCap1();
         case 1:
-            return new CapitoloLavoriInCorso();
+            return new OperazioniCap2();
         case 2:
             return new CapitoloLavoriInCorso();
 	    case 3:
